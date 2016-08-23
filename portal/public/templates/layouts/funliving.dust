@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>{+title /}</title>
+<link rel="stylesheet" type="text/css" href="/css/base.css">
+{+link /}
+{+script /}
+
+</head>
+<body>
+<div class="top">
+  <div class="w cf">
+    <a href="index.html" class="tlogo"><img src="imgs/logo.png"></a
+      ><ul class="topcon">
+      <li class="moretabs"><strong>帮助<span class="icon-down"></span></strong>
+        <div class="tabs"><ul>
+          <li><a href="#">预订流程</a></li>
+          <li><a href="#">在线客服</a></li>
+          <li><a href="#">其他帮助</a></li>
+        </ul></div>
+      </li>
+      <li class="loginup"><a href="">注册</a>|<a href="">登录</a></li>
+    </ul></div></div>
+
+{+body /}
+
+<div class="exs"><div class="w cf">
+  <ul>
+    <li class="wh1"><strong>上门获得帮助</strong><span>阿萨德发送到加拉圣诞节<br>加拉圣诞节</span></li>
+    <li class="wh2"><strong>上门获得帮助</strong><span>阿萨德撒旦法加拉圣诞节<br>加拉圣诞节</span></li>
+    <li class="wh3"><strong>400-800-8888</strong><span>熟悉英国生活和学习的咨询团队<br>为你提供专业的留学信息</span></li>
+  </ul></div></div>
+<div class="social"><div class="w"><div class="soicons"><a href=""><span class="icon-wechat"></span></a><a href=""><span class="icon-weibo"></span></a><a href=""><span class="icon-instagram"></span></a><a href=""><span class="icon-facebook"></span></a><a href=""><span class="icon-youtube-play"></span></a></div></div></div>
+<div class="footer"><a href="">关于我们</a>|<a href="">联系我们</a>|<a href="">加入我们</a>|<a href="">隐私条款</a>|<a href="">代理机构</a>
+<p>Copyright &copy; 2016 funliving.com , All Rights Reserved. 京ICP备13088888</p></div>
+
+{+footer /}
+</body>

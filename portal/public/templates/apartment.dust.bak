@@ -1,0 +1,299 @@
+{>"layouts/funliving" /}
+
+{<title }番茄留学公寓 详情{/title}
+
+{<link }
+<link rel="stylesheet" type="text/css" href="/css/apt.css">
+<link rel="stylesheet" type="text/css" href="/css/gallery.css">
+{/link}
+
+{<script}
+<script src="/js/jquery.js"></script>
+{/script}
+
+{<body}
+
+<div class="aptpiclay">
+  <div class="w cf">
+  <h1 class="aptName">{name}</h1>
+  <div class="aptloc">
+    <span class="icon-mapm"></span>纽卡斯尔市中心，英国
+    <div class="reviewstars"><span class="icon-sf"></span><span class="icon-sf"></span><span class="icon-sf"></span><span class="icon-sh"></span><span class="icon-se"></span></div>
+  </div>
+
+
+<ul class="aptPics cf" id="lightgallery">
+    <li data-src="db/1-1600.jpg" data-sub-html="图片介绍" class="apcil"><a href=""><img src="db/a1.jpg" width="490" height="380"></a></li>
+    <li data-src="db/2-1600.jpg" data-sub-html="图片介绍" class="apcir"><a href=""><img src="db/a1.jpg" width="235" height="180"></a></li>
+    <li data-src="db/1-1600.jpg" class="apcir"><a href=""><img src="db/a1.jpg" width="235" height="180"></a></li>
+    <li data-src="db/2-1600.jpg" class="apcir"><a href=""><img src="db/a1.jpg" width="235" height="180"></a></li>
+    <li data-src="db/1-1600.jpg" class="apcir"><a href=""><img src="db/a1.jpg" width="235" height="180"></a></li>
+
+    <li data-src="db/2-1600.jpg" data-sub-html="图片介绍" class="apcir hide"><a href=""><img src="db/a1.jpg" width="235" height="180"></a></li>
+    <li data-src="db/1-1600.jpg" class="apcir hide"><a href=""><img src="db/a1.jpg" width="235" height="180"></a></li>
+    <li data-src="db/2-1600.jpg" data-sub-html="图片介绍" class="apcir hide"><a href=""><img src="db/a1.jpg" width="235" height="180"></a></li>
+    <li data-src="db/1-1600.jpg" class="apcir hide"><a href=""><img src="db/a1.jpg" width="235" height="180"></a></li>
+    <li data-src="db/2-1600.jpg" class="apcir hide"><a href=""><img src="db/a1.jpg" width="235" height="180"></a></li>
+
+</ul>
+
+  <div class="moreapics"><a href="">查看全部 28 张图片 <span class="icon-right"></span></a></div>
+
+</div>
+</div>
+
+<div class="aptconsw">
+<div class="w cf">
+  <div class="aptconsl">
+    <div class="fixedtab"><a href="#room-1">公寓地址</a><a href="#room-2">公寓设施</a><a href="#room-3">公寓概况</a><a href="#room-4">标题范例</a><a href="#room-5">周边场所</a></div>
+    <div class="aptclist" id="room-1">
+      <h3 class="aptcltit">公寓地址</h3>
+      <div class="aptaddr">19-29 Woburn, Bloomsbury街区, 伦敦, WC1H 0AQ     <a href="">查看地图</a></div>
+      <div class="aptcgo">前往学校时间：打车6分钟，公交12分钟，步行31分钟</div>
+    </div>
+
+    <div class="aptclist" id="room-2">
+      <h3 class="aptcltit">公寓设施</h3>
+      <ul class="facilities cf">
+      {#facilities}
+        <li><i></i>{name}</li>
+      {/facilities}
+        <li><i></i>WiFi</li>
+                <li><i></i>包水费</li>
+                <li><i></i>包电费</li>
+                <li><i></i>包暖气费</li>
+                <li><i></i>安全门禁</li>
+                <li><i></i>安保人员</li>
+                <li><i></i>24小时监控</li>
+                <li><i></i>24小时热水</li>
+                <li><i></i>全套家具</li>
+                <li><i></i>厨房用品</li>
+                <li><i></i>有线电视</li>
+                <li><i></i>自习室</li>
+                <li><i></i>洗衣房</li>
+                <li><i></i>电梯</li>
+                <li><i></i>自行车库</li>
+                <li><i></i>停车位</li>
+                <li><i></i>健身房</li>
+                <li><i></i>娱乐区</li>
+                <li><i></i>电影放映室</li>
+                <li><i></i>保险</li>
+                <li><i></i>保洁服务</li>
+                <li><i></i>维修团队</li>
+                <li><i></i>残疾人设施</li>
+      </ul>
+    </div>
+
+    <div class="aptclist" id="room-3">
+      <h3 class="aptcltit">公寓概况</h3>
+      <div class="aptxts">
+        <p class="para">Woburn Place提供一系列高品质、高标准的学生套房，所有房间都配备完善的现代化电器。套房类型有单间套房、1室1厅、2室1厅和双人间四种。每间卧室都包含独立卫浴，单间套房的床更大一些以及带有一个独立的厨房。</p>
+<p class="para">为丰富同学们的住宿生活，公寓安排了一些公共区域供大家休闲和娱乐，其中包括公共休息室、自习室、洗衣房和自行车库。公共休息室提供免费桌球和电视。公寓提供24小时安保服务，严格的门禁系统和监控设备为同学们的住宿安全提供保障。接待处的服务人员也随时为你提供各种服务，方便同学们的生活。</p>
+<p class="para">我们提供的所有伦敦学生公寓租约中，都已经包含了无线网络、财产保险和公共设施账单（例如水电）的费用，因此无需担心产生任何额外支出。</p>
+</div>
+    </div>
+
+    <div class="aptclist" id="room-4">
+      <h3 class="aptcltit">标题范例</h3>
+      <div class="aptxts">
+<p class="para">为丰富同学们的住宿生活，公寓安排了一些公共区域供大家休闲和娱乐，其中包括公共休息室、自习室、洗衣房和自行车库。公共休息室提供免费桌球和电视。公寓提供24小时安保服务，严格的门禁系统和监控设备为同学们的住宿安全提供保障。接待处的服务人员也随时为你提供各种服务，方便同学们的生活。</p>
+<p class="para">我们提供的所有伦敦学生公寓租约中，都已经包含了无线网络、财产保险和公共设施账单（例如水电）的费用，因此无需担心产生任何额外支出。</p>
+</div>
+    </div>
+
+    <div class="aptclist" id="room-5">
+      <h3 class="aptcltit">周边场所</h3>
+      <div class="aptxts">
+        <ul>
+          <li>地铁站，步行4分钟</li>
+          <li>中央火车站，步行4分钟</li>
+          <li>探索博物馆，步行30秒</li>
+          <li>Academy 现场音乐场所，步行3分钟</li>
+          <li>The Gate娱乐中心，步行4分钟</li>
+          <li>市中心购物，步行5分钟</li>
+          <li>中国城，步行3分钟</li>
+          <li>中央图书馆，步行9分钟</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div class="aptconsr">
+
+
+    <div class="roomaply hide">
+      <div class="aplytit">
+        <a href="" class="backlist">← 返回</a>
+        <h5>Premium Range 1 One Bedroom Flat</h5>
+      </div>
+      <div class="aplycons">
+        <h3>预订提交</h3>
+        <div class="aplyiput cf">
+        <dl class="cf"><dt>开始时间</dt><dd><div class="pickdate">选择开始时间<span class="icon-down"></span></div></dd></dl>
+        <dl class="cf"><dt>退房时间</dt><dd><div class="pickdate">选择开始时间<span class="icon-down"></span></div></dd></dl>
+        <dl class="cf"><dt>填写姓名</dt><dd><input class="apint" type="text" placeholder="填写姓名"></dd></dl>
+        <dl class="cf"><dt>联系电话</dt><dd><input class="apint" type="tell" placeholder="填写电话"></dd></dl>
+        <dl class="cf"><dt>常用邮箱</dt><dd><input class="apint" type="mail" placeholder="填写邮箱"></dd></dl>
+        </div>
+        <div class="aptbtnlay"><input type="submit" class="btnapl" value="提交"><p>提交预订信息，我们会安排顾问</p></div>
+
+      </div>
+    </div>
+
+
+    <div class="roomslay">
+        <div class="roomtab">房间类型： <ul class="rtabs"><li class="curr">所有</li><li>多人间</li><li>单人间</li><li>套房</li></ul> <i class="roomqs">?<div><ul><li><strong>多人间</strong>卧室两人共享，卫浴独立或共享，客厅厨房共享。</li><li><strong>单人间</strong>卧室单人独享，卫浴独立或共享，客厅厨房共享。</li><li><strong>套房</strong>独享卧室、卫浴、客厅、厨房等所有设施。</li></ul></div></i></div>
+        <div class="roomlist">
+
+
+        <div class="roomitem cf">
+          <div class="rtml"><h5>Premium Range 1 One Bedroom Flat</h5>
+          <ul>
+            <li>套房间</li>
+            <li>舒适间 18 - 20 sqm</li>
+            <li>单人床 Single bed</li>
+            <li>独立卫浴 Private ensuite</li>
+          </ul>
+          </div>
+          <div class="rtmr">
+            <div class="rtmpri"><strong>￡369</strong>起</div><a href="">预订</a>
+          </div>
+        </div>
+
+
+        <div class="roomitem cf">
+          <div class="rtml"><h5>Premium Range 1 One Bedroom Flat</h5>
+          <ul>
+            <li>套房间</li>
+            <li>舒适间 18 - 20 sqm</li>
+            <li>单人床 Single bed</li>
+            <li>独立卫浴 Private ensuite</li>
+          </ul>
+          </div>
+          <div class="rtmr">
+            <div class="rtmpri"><strong>￡369</strong>起</div><a href="">预订</a>
+          </div>
+        </div>
+
+
+        <div class="roomitem cf">
+          <div class="rtml"><h5>Premium Range 1 One Bedroom Flat</h5>
+          <ul>
+            <li>套房间</li>
+            <li>舒适间 18 - 20 sqm</li>
+            <li>单人床 Single bed</li>
+            <li>独立卫浴 Private ensuite</li>
+          </ul>
+          </div>
+          <div class="rtmr">
+            <div class="rtmpri"><strong>￡369</strong>起</div><a href="">预订</a>
+          </div>
+        </div>
+
+
+        <div class="roomitem cf">
+          <div class="rtml"><h5>Premium Range 1 One Bedroom Flat</h5>
+          <ul>
+            <li>套房间</li>
+            <li>舒适间 18 - 20 sqm</li>
+            <li>单人床 Single bed</li>
+            <li>独立卫浴 Private ensuite</li>
+          </ul>
+          </div>
+          <div class="rtmr">
+            <div class="rtmpri"><strong>￡369</strong>起</div><a href="">预订</a>
+          </div>
+        </div>
+
+
+        <div class="roomitem cf">
+          <div class="rtml"><h5>Premium Range 1 One Bedroom Flat</h5>
+          <ul>
+            <li>套房间</li>
+            <li>舒适间 18 - 20 sqm</li>
+            <li>单人床 Single bed</li>
+            <li>独立卫浴 Private ensuite</li>
+          </ul>
+          </div>
+          <div class="rtmr">
+            <div class="rtmpri"><strong>￡369</strong>起</div><a href="">预订</a>
+          </div>
+        </div>
+
+
+        <div class="roomitem cf">
+          <div class="rtml"><h5>Premium Range 1 One Bedroom Flat</h5>
+          <ul>
+            <li>套房间</li>
+            <li>舒适间 18 - 20 sqm</li>
+            <li>单人床 Single bed</li>
+            <li>独立卫浴 Private ensuite</li>
+          </ul>
+          </div>
+          <div class="rtmr">
+            <div class="rtmpri"><strong>￡369</strong>起</div><a href="">预订</a>
+          </div>
+        </div>
+
+
+        <div class="roomitem cf">
+          <div class="rtml"><h5>Premium Range 1 One Bedroom Flat</h5>
+          <ul>
+            <li>套房间</li>
+            <li>舒适间 18 - 20 sqm</li>
+            <li>单人床 Single bed</li>
+            <li>独立卫浴 Private ensuite</li>
+          </ul>
+          </div>
+          <div class="rtmr">
+            <div class="rtmpri"><strong>￡369</strong>起</div><a href="">预订</a>
+          </div>
+        </div>
+
+
+        <div class="roomitem cf">
+          <div class="rtml"><h5>Premium Range 1 One Bedroom Flat</h5>
+          <ul>
+            <li>套房间</li>
+            <li>舒适间 18 - 20 sqm</li>
+            <li>单人床 Single bed</li>
+            <li>独立卫浴 Private ensuite</li>
+          </ul>
+          </div>
+          <div class="rtmr">
+            <div class="rtmpri"><strong>￡369</strong>起</div><a href="">预订</a>
+          </div>
+        </div>
+
+
+        <div class="roomitem cf">
+          <div class="rtml"><h5>Premium Range 1 One Bedroom Flat</h5>
+          <ul>
+            <li>套房间</li>
+            <li>舒适间 18 - 20 sqm</li>
+            <li>单人床 Single bed</li>
+            <li>独立卫浴 Private ensuite</li>
+          </ul>
+          </div>
+          <div class="rtmr">
+            <div class="rtmpri"><strong>￡369</strong>起</div><a href="">预订</a>
+          </div>
+        </div>
+
+        </div>
+    </div>
+            <img src="imgs/contactus.png" style="margin-top:30px">
+  </div>
+</div>
+</div>
+{/body}
+{<footer}
+<script src="js/scripts.js"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('#lightgallery').lightGallery();
+        });
+        </script>
+        <script src="/js/lightgallery.js"></script>
+        <script src="/js/lg-thumbnail.js"></script>
+{/footer}

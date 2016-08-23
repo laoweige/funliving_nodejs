@@ -1,0 +1,77 @@
+{>"layouts/funliving" /}
+
+{<title }番茄留学公寓 详情{/title}
+
+{<link }
+<link rel="stylesheet" type="text/css" href="/css/apt.css">
+<link rel="stylesheet" type="text/css" href="/css/gallery.css">
+{/link}
+
+{<script}
+<script src="/js/jquery.js"></script>
+{/script}
+
+{<body}
+
+<div class="aptpiclay">
+  <div class="w cf">
+  <h1 class="aptName">{name}</h1>
+  <div class="aptloc">
+    <span class="icon-mapm"></span>{address}
+    <div class="reviewstars"><span class="icon-sf"></span><span class="icon-sf"></span><span class="icon-sf"></span><span class="icon-sh"></span><span class="icon-se"></span></div>
+  </div>
+
+
+{>"partials/pictures" /}
+
+</div>
+</div>
+
+<div class="aptconsw">
+<div class="w cf">
+  <div class="aptconsl">
+    <div class="fixedtab"><a href="#room-1">公寓地址</a><a href="#room-2">公寓设施</a><a href="#room-3">公寓概况</a><a href="#room-4">标题范例</a><a href="#room-5">周边场所</a></div>
+    <div class="aptclist" id="room-1">
+      <h3 class="aptcltit">公寓地址</h3>
+      <div class="aptaddr">19-29 Woburn, Bloomsbury街区, 伦敦, WC1H 0AQ     <a href="">查看地图</a></div>
+      <div class="aptcgo">前往学校时间：打车6分钟，公交12分钟，步行31分钟</div>
+    </div>
+
+    <div class="aptclist" id="room-2">
+      <h3 class="aptcltit">公寓设施</h3>
+      <ul class="facilities cf">
+      {#facilities}
+        <li><i></i>{name}</li>
+      {/facilities}
+      </ul>
+    </div>
+
+    {#introduces}
+     <div class="aptclist" id="room-{id}">
+          <h3 class="aptcltit">{title}</h3>
+          <div class="aptxts">
+            {content|s}
+    </div>
+        </div>
+    {/introduces}
+
+  </div>
+  <div class="aptconsr">
+
+    {>"partials/room" /}
+    <img src="imgs/contactus.png" style="margin-top:30px">
+
+  </div>
+</div>
+</div>
+{/body}
+{<footer}
+<script src="js/scripts.js"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('#lightgallery').lightGallery();
+        });
+        </script>
+        <script src="/js/lightgallery.js"></script>
+        <script src="/js/lg-thumbnail.js"></script>
+{/footer}

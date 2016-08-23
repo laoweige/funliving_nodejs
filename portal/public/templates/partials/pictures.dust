@@ -1,0 +1,10 @@
+<ul class="aptPics cf" id="lightgallery">
+    {#pictures}
+        {@select key=$idx}
+            {@eq value=0}<li data-src="{path}" data-sub-html="{name}" class="apcil"><a href=""><img src="{path}" width="490" height="380"></a></li>{/eq}
+            {@lt value=5}<li data-src="{path}" data-sub-html="{name}" class="apcir"><a href=""><img src="{path}" width="235" height="180"></a></li>{/lt}
+            {@gt value=4} <li data-src="{path}" data-sub-html="{name}" class="apcir hide"><a href=""><img src="{path}" width="235" height="180"></a></li>{/gt}
+        {/select}
+    {/pictures}
+</ul>
+  <div class="moreapics"><a href="">查看全部 {pictures.length} 张图片 <span class="icon-right"></span></a></div>

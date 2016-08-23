@@ -1,0 +1,27 @@
+{>"layouts/funliving" /}
+
+{<title }番茄留学公寓 首页{/title}
+
+{<link }
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.22.0/mapbox-gl.css' rel='stylesheet' />
+{/link}
+
+{<script}
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.22.0/mapbox-gl.js'></script>
+{/script}
+
+{<body}
+<div id='map' style='width: 400px; height: 300px;'></div>
+{/body}
+
+{<footer}
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiZGV2bGluIiwiYSI6ImNpcnczNHVqbjBqNzJ0MW5raHh3ajNzcGUifQ.bQ6bSciVOSMpjTPi9PodmA';
+var map = new mapboxgl.Map({
+    container: 'map',
+    center: [-122.420679, 37.772537],
+    style: 'mapbox://styles/mapbox/streets-v9',
+    zoom: 13
+});
+</script>
+{/footer}

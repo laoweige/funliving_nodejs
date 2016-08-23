@@ -1,0 +1,72 @@
+{>"layouts/funliving" /}
+
+{<title }番茄留学公寓 列表 伦敦{/title}
+
+{<link }<link rel="stylesheet" type="text/css" href="/css/apt.css">{/link}
+
+{<script}
+<script src="/jquery.min.js"></script>
+{/script}
+
+{<body}
+
+<div class="filtertop">
+  <div class="w cf">
+    <h2><span class="icon-mapm"></span>伦敦<span class="icon-right"></span><span class="icon-grad"></span>卡斯商学院</h2>
+  <p>附近有超过84个留学生公寓，约23455个房间</p></div>
+</div>
+
+<div class="filtertool">
+  <div class="w cf">
+  <div class="ft-l"><h5>城市及学校</h5>
+    <dl class="dropdown">
+      <dt><span class="icon-down"></span><span class="icon-mapm"></span>选择城市</dt>
+      <dd class="scroller">
+        <span>伦敦</span>
+        <span>利物浦</span>
+        <span>谢菲尔德</span>
+      </dd>
+    </dl>
+
+      <dl class="dropdown shool">
+      <dt><span class="icon-down"></span><span class="icon-grad"></span>选择学校</dt>
+      <dd class="scroller">
+      {#colleges}
+      <span>{name}</span>
+      {/colleges}
+      </dd>
+    </dl>
+
+  </div>
+  <div class="ft-r"><h5>价格区间</h5>
+
+<div class="price-slider"><img src="imgs/r.png"></div>
+
+
+  </div>
+  </div>
+</div>
+
+<div class="filtersort">
+  <div class="w">排序： <ul class="sortli"><li>默认</li><li>价格<i class="down"></i></li><li>距离<i></i></li></ul> <strong class="spcsort">地图查看</strong> <span class="f_r"><b>{total}</b>个附近公寓</span></div>
+</div>
+
+<div class="aptslist w">
+
+{#apartments}
+  <div class="aptitem cf">
+    <div class="aptpic"><a href="/apartment_{id}.html"><img src="{images}" width="235" height="180"></a></div>
+    <div class="apttro">
+      <h4><a href="/apartment_{id}.html">{name}</a></h4>
+      <p class="reviewstars">
+            <span class="icon-sf"></span><span class="icon-sf"></span><span class="icon-sf"></span><span class="icon-sh"></span><span class="icon-se"></span>
+      </p>
+      <p class="aptbrief">步行5分钟可到Liverpool Street地铁站，距离著名的Spitalfields集市仅几步距离著名的Spitalfields集市仅几步之遥...</p>
+    </div>
+    <div class="aptric">每周<div class="aprice"><strong>£{rent}</strong>起<p></p></div><a href="/apartment_{id}.html" class="adetail">查看详情<span class="icon-right"></span></a></div>
+  </div>
+{/apartments}
+</div>
+
+ {>"partials/pagination"/}
+{/body}

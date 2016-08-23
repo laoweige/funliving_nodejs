@@ -1,0 +1,123 @@
+{>"layouts/funliving" /}
+
+{<title }番茄留学公寓 首页{/title}
+
+{<link }<link rel="stylesheet" type="text/css" href="/css/index.css">{/link}
+
+{<script}
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery.timers-1.2.js"></script>
+{/script}
+
+{<body}
+<div class="homemian"><h1 class="slogan">在这里，找到中意的留学公寓。</h1>
+
+  <div class="hsearch cf">
+    <div class="hsin">
+      <div  class="hinput">
+        <input type="text" class="h-search" placeholder="输入城市、大学或公寓名" autocomplete="off"></div>
+        <button type="submit" class="h-sbtn" label="搜索"><span class="icon-search"></span></button>
+        <div class="s-hot">热门：<a href="">伦敦</a>|<a href="">利物浦</a>|<a href="">桑德兰大学</a></div>
+
+
+        <div class="hsearchpop scroller hide" id="Advanced">
+          <div class="s-history"><b><span class="icon-trash"></span>清除历史记录</b>
+          历史搜索：<a href="">伦敦</a>、<a href="filter.html">卡斯商学院</a>、<a href="filter.html">利物浦</a>
+          </div>
+          <div class="tabtw"><ul><li class="cur">城市</li><li>学校</li></ul></div>
+          <div class="tabcons cf">
+            <ul class="citys">
+            <li><a href="filter.html">伦敦</a></li><li><a href="filter.html">曼彻斯特</a></li><li><a href="filter.html">格拉斯哥</a></li><li><a href="filter.html">伯明翰</a></li><li><a href="filter.html">谢菲尔德</a></li><li><a href="filter.html">利物浦</a></li><li><a href="filter.html">诺丁汉</a></li><li><a href="filter.html">利兹</a></li><li><a href="filter.html">卡迪夫</a></li><li><a href="filter.html">哈德斯菲尔德</a></li><li><a href="filter.html">莱斯特</a></li><li><a href="filter.html">爱丁堡</a></li><li><a href="filter.html">考文垂</a></li><li><a href="filter.html">埃克塞特</a></li><li><a href="filter.html">南安普敦</a></li><li><a href="filter.html">布里斯托</a></li><li><a href="filter.html">邓迪</a></li><li><a href="filter.html">拉夫堡</a></li><li><a href="filter.html">约克</a></li><li><a href="filter.html">剑桥</a></li><li><a href="filter.html">普雷斯顿</a></li><li><a href="filter.html">杜伦</a></li><li><a href="filter.html">伊普斯威奇</a></li><li><a href="filter.html">伍尔弗汉普顿</a></li>
+          </ul>
+          <ul class="shools">
+<li><a href="filter.html">INTO斯特林大学伦敦校区</a></li><li><a href="filter.html">Kaplan伦敦国际学院</a></li><li><a href="filter.html">三一拉邦音乐与舞蹈学院</a></li><li><a href="filter.html">东伦敦大学</a></li><li><a href="filter.html">东伦敦大学Stratford校区</a></li><li><a href="filter.html">中央兰开夏大学</a></li><li><a href="filter.html">亚非学院Vernon</a></li><li><a href="filter.html">Square校区</a></li><li><a href="filter.html">伦敦南岸大学</a></li><li><a href="filter.html">伦敦卫生与热带医学院</a></li><li><a href="filter.html">伦敦商学院</a></li><li><a href="filter.html">伦敦国王学院</a></li><li><a href="filter.html">伦敦国王学院Guy's校区</a></li><li><a href="filter.html">伦敦国王学院St</a></li><li><a href="filter.html">Thomas'校区</a></li><li><a href="filter.html">伦敦城市大学</a></li><li><a href="filter.html">伦敦大学St George's校区</a></li><li><a href="filter.html">伦敦大学亚非学院</a></li></li>
+          </ul>
+        </div>
+        </div>
+
+
+<div class="hsearchpop hide" id="Advanced2">
+  <div class="quickshow">
+      <ul>
+          <li><span class="icon-mapm"></span><b>伦</b>敦，英国</li>
+          <li><span class="icon-grad"></span><b>卡</b>斯商学院，伦敦</li>
+          <li><span class="icon-grad"></span>卡斯商<b>学</b>院，伦敦</li>
+          <li><span class="icon-grad"></span><b>卡</b>斯商学院，伦敦</li>
+          <li><span class="icon-mapm"></span><b>利</b>物浦，英国</li>
+      </ul>
+  </div>
+</div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+<div class="whyintr"><div class="w cf"><ul><li class="wn1"><strong>9000+公寓房源</strong><p>从独立卫生间到套房，房型多样，家具电器一应俱全的公寓设施</p></li><li class="wn2"><strong>一对一贴心服务</strong><p>从独立卫生间到套房，房型多样，家具电器一应俱全的公寓设施</p></li><li class="wn3"><strong>免费开放预订</strong><p>从独立卫生间到套房，房型多样，家具电器一应俱全的公寓设施</p></li></ul></div></div>
+<div class="cityshow"><h3>全英国<b>43</b>个城市，<b>132</b>个认证学生公寓，<b>28700</b>个房间...</h3><div class="w cf">
+  <ul><li><a href="/apartments?city=1"><div><strong>伦敦</strong><span>125个公寓</span></div><img src="http://pc.pic.uhouzz.com/online/cdn/common/images/apartment/3.2ae85f60.jpg"></a></li>
+    <li><a href="filter.html"><div><strong>曼切斯特</strong><span>125个公寓</span></div><img src="http://pc.pic.uhouzz.com/online/cdn/common/images/apartment/5.b775e681.jpg"></a></li>
+    <li><a href="filter.html"><div><strong>伦敦</strong><span>125个公寓</span></div><img src="http://pc.pic.uhouzz.com/online/cdn/common/images/apartment/3.2ae85f60.jpg"></a></li>
+    <li><a href="filter.html"><div><strong>利物浦</strong><span>125个公寓</span></div><img src="db/c1.jpg"></a></li>
+    <li><a href="filter.html"><div><strong>伦敦</strong><span>125个公寓</span></div><img src="db/c1.jpg"></a></li>
+    <li><a href="filter.html"><div><strong>格拉斯哥</strong><span>125个公寓</span></div><img src="http://pc.pic.uhouzz.com/online/cdn/common/images/apartment/2.56ca7f3e.jpg"></a></li>
+    <li><a href="filter.html"><div><strong>利兹</strong><span>125个公寓</span></div><img src="http://pc.pic.uhouzz.com/online/cdn/common/images/apartment/4.3b63da15.jpg"></a></li>
+    <li><a href="filter.html"><div><strong>伦敦</strong><span>125个公寓</span></div><img src="http://pc.pic.uhouzz.com/online/cdn/common/images/apartment/3.2ae85f60.jpg"></a></li></ul>
+<div class="morecity cf"><a href="#">查看更多城市 ></a></div>
+</div></div>
+{<footer}
+<script src="/js/scripts.js"></script>
+<script>
+var searchText="";
+$('body').everyTime('1s',function(){
+   if($(".h-search").is(':focus') && $(".h-search").val().trim()!=searchText){
+
+        searchText = $(".h-search").val().trim();
+        if(searchText==""){
+            $("#Advanced2").addClass('hide');
+            $("#Advanced").removeClass('hide');
+            return;
+        }
+        if(!$("#Advanced").hasClass("hide")){
+            $("#Advanced").addClass('hide');
+        }
+        if($("#Advanced2").hasClass("hide")){
+            $("#Advanced2").removeClass('hide');
+        }
+        $.get("/json?keyword="+encodeURIComponent(searchText), function(data){
+            $(".quickshow ul li").remove();
+            if(data.length==0){
+                $(".quickshow ul").append("<li>没有任何匹配</li>");
+                return;
+            }
+
+            for(var i = 0; i<data.length; i++){
+                var item="<li><span class=\"";
+                if(data[i].type==0){
+                    item+="icon-grad";
+                }else if(data[i].type==1){
+                    item+="icon-mapm";
+                }else{
+                    item+="icon-trash";
+                }
+                item+="\"></span><a href=\"";
+                item+=item+=data[i].url;
+                item+="\">";
+                item+=data[i].name;
+                item+="</a></li>";
+                $(".quickshow ul").append(item);
+            }
+
+        });
+   }
+
+   if($(".h-search").is(':focus') && $(".h-search").val().trim()==searchText&&searchText!=""){
+         $("#Advanced2").removeClass('hide');
+          $("#Advanced").addClass('hide');
+   }
+});
+
+</script>
+{/footer}
+{/body}
