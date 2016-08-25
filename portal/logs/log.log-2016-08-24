@@ -1,0 +1,310 @@
+[2016-08-24 19:29:59.640] [INFO] log - starValue = rank/2; 3.5
+[2016-08-24 19:29:59.641] [INFO] log - rank%2==1; 1
+[2016-08-24 19:33:54.806] [INFO] log - starValue = rank/2; 3
+[2016-08-24 19:33:54.807] [INFO] log - rank%2==1; 1
+[2016-08-24 19:39:41.579] [INFO] log - starValue = rank/2; 5
+[2016-08-24 19:39:41.580] [INFO] log - rank%2==1; 0
+[2016-08-24 19:41:45.996] [INFO] log - starValue = rank/2; 5
+[2016-08-24 19:41:45.997] [INFO] log - rank%2==1; 0
+[2016-08-24 19:41:58.701] [INFO] log - starValue = rank/2; 5
+[2016-08-24 19:41:58.701] [INFO] log - rank%2==1; 0
+[2016-08-24 19:43:46.482] [INFO] log - starValue = rank/2; 5
+[2016-08-24 19:43:46.483] [INFO] log - rank%2==1; 0
+[2016-08-24 19:47:14.949] [INFO] log - starValue = rank/2; 5
+[2016-08-24 19:47:14.950] [INFO] log - rank%2==1; 0
+[2016-08-24 19:49:14.116] [INFO] log - starValue = rank/2; NaN
+[2016-08-24 19:50:09.230] [INFO] log - undefined
+[2016-08-24 19:50:09.231] [INFO] log - undefined
+[2016-08-24 19:50:09.232] [INFO] log - undefined
+[2016-08-24 19:50:09.232] [INFO] log - undefined
+[2016-08-24 19:50:09.232] [INFO] log - undefined
+[2016-08-24 19:50:09.232] [INFO] log - undefined
+[2016-08-24 19:50:09.232] [INFO] log - undefined
+[2016-08-24 19:50:09.232] [INFO] log - undefined
+[2016-08-24 19:50:09.232] [INFO] log - undefined
+[2016-08-24 19:50:09.232] [INFO] log - undefined
+[2016-08-24 19:50:09.233] [INFO] log - { apartments: 
+   [ { id: 45,
+       name: 'Chapter Spitalfields 45',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8 },
+     { id: 46,
+       name: 'Chapter Spitalfields 46',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8 },
+     { id: 47,
+       name: 'Chapter Spitalfields 47',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8 },
+     { id: 48,
+       name: 'Chapter Spitalfields 48',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8 },
+     { id: 49,
+       name: 'Chapter Spitalfields 49',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8 },
+     { id: 50,
+       name: 'Chapter Spitalfields 50',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8 },
+     { id: 51,
+       name: 'Chapter Spitalfields 51',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8 },
+     { id: 52,
+       name: 'Chapter Spitalfields 52',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8 },
+     { id: 53,
+       name: 'Chapter Spitalfields 53',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8 },
+     { id: 54,
+       name: 'Chapter Spitalfields 54',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8 } ],
+  colleges: 
+   [ { coordinate: '1.637,18.33',
+       nation: 1,
+       id: 1,
+       name: 'BPP大学Croydon校区',
+       cityId: 1 },
+     { coordinate: '1.637,18.33',
+       nation: 1,
+       id: 2,
+       name: 'BPP大学商学院Kings Cross校区',
+       cityId: 1 },
+     { coordinate: '1.637,18.33',
+       nation: 1,
+       id: 3,
+       name: '东伦敦大学',
+       cityId: 1 },
+     { coordinate: '1.637,18.33',
+       nation: 1,
+       id: 4,
+       name: '伦敦国王学院St Thomas&#039;校区',
+       cityId: 1 },
+     { coordinate: '1.637,18.33',
+       nation: 1,
+       id: 5,
+       name: '伦敦密德萨斯大学',
+       cityId: 1 } ],
+  total: 179,
+  city: 1,
+  page: 1,
+  endPage: 18,
+  pageSize: 10,
+  address: '伦敦',
+  pages: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] }
+[2016-08-24 19:52:23.766] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:52:23.767] [INFO] log - rank%2==1; 0
+[2016-08-24 19:52:23.767] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:52:23.768] [INFO] log - rank%2==1; 0
+[2016-08-24 19:52:23.768] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:52:23.768] [INFO] log - rank%2==1; 0
+[2016-08-24 19:52:23.768] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:52:23.768] [INFO] log - rank%2==1; 0
+[2016-08-24 19:52:23.768] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:52:23.768] [INFO] log - rank%2==1; 0
+[2016-08-24 19:52:23.769] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:52:23.769] [INFO] log - rank%2==1; 0
+[2016-08-24 19:52:23.769] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:52:23.769] [INFO] log - rank%2==1; 0
+[2016-08-24 19:52:23.769] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:52:23.769] [INFO] log - rank%2==1; 0
+[2016-08-24 19:52:23.769] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:52:23.769] [INFO] log - rank%2==1; 0
+[2016-08-24 19:52:23.769] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:52:23.770] [INFO] log - rank%2==1; 0
+[2016-08-24 19:52:23.770] [INFO] log - { apartments: 
+   [ { id: 45,
+       name: 'Chapter Spitalfields 45',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8,
+       stars: [Object] },
+     { id: 46,
+       name: 'Chapter Spitalfields 46',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8,
+       stars: [Object] },
+     { id: 47,
+       name: 'Chapter Spitalfields 47',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8,
+       stars: [Object] },
+     { id: 48,
+       name: 'Chapter Spitalfields 48',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8,
+       stars: [Object] },
+     { id: 49,
+       name: 'Chapter Spitalfields 49',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8,
+       stars: [Object] },
+     { id: 50,
+       name: 'Chapter Spitalfields 50',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8,
+       stars: [Object] },
+     { id: 51,
+       name: 'Chapter Spitalfields 51',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8,
+       stars: [Object] },
+     { id: 52,
+       name: 'Chapter Spitalfields 52',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8,
+       stars: [Object] },
+     { id: 53,
+       name: 'Chapter Spitalfields 53',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8,
+       stars: [Object] },
+     { id: 54,
+       name: 'Chapter Spitalfields 54',
+       images: 'https://static.student-cdn.com/media/cache/light_gallery_main_desktop/mstr/country/united-kingdom/city/london/property/nido-west-hampstead/image-o6i642.jpeg',
+       address: '9 Frying Pan Alley, Spitalfields街区, 伦敦, E1 7HS',
+       rent: 321,
+       rank: 8,
+       stars: [Object] } ],
+  colleges: 
+   [ { coordinate: '1.637,18.33',
+       nation: 1,
+       id: 1,
+       name: 'BPP大学Croydon校区',
+       cityId: 1 },
+     { coordinate: '1.637,18.33',
+       nation: 1,
+       id: 2,
+       name: 'BPP大学商学院Kings Cross校区',
+       cityId: 1 },
+     { coordinate: '1.637,18.33',
+       nation: 1,
+       id: 3,
+       name: '东伦敦大学',
+       cityId: 1 },
+     { coordinate: '1.637,18.33',
+       nation: 1,
+       id: 4,
+       name: '伦敦国王学院St Thomas&#039;校区',
+       cityId: 1 },
+     { coordinate: '1.637,18.33',
+       nation: 1,
+       id: 5,
+       name: '伦敦密德萨斯大学',
+       cityId: 1 } ],
+  total: 179,
+  city: 1,
+  page: 1,
+  endPage: 18,
+  pageSize: 10,
+  address: '伦敦',
+  pages: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] }
+[2016-08-24 19:54:44.246] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:54:44.247] [INFO] log - rank%2==1; 0
+[2016-08-24 19:54:44.248] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:54:44.248] [INFO] log - rank%2==1; 0
+[2016-08-24 19:54:44.248] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:54:44.248] [INFO] log - rank%2==1; 0
+[2016-08-24 19:54:44.248] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:54:44.248] [INFO] log - rank%2==1; 0
+[2016-08-24 19:54:44.248] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:54:44.248] [INFO] log - rank%2==1; 0
+[2016-08-24 19:54:44.249] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:54:44.249] [INFO] log - rank%2==1; 0
+[2016-08-24 19:54:44.249] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:54:44.250] [INFO] log - rank%2==1; 0
+[2016-08-24 19:54:44.250] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:54:44.250] [INFO] log - rank%2==1; 0
+[2016-08-24 19:54:44.250] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:54:44.250] [INFO] log - rank%2==1; 0
+[2016-08-24 19:54:44.250] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:54:44.251] [INFO] log - rank%2==1; 0
+[2016-08-24 19:56:05.153] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:56:05.153] [INFO] log - rank%2==1; 0
+[2016-08-24 19:56:05.154] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:56:05.154] [INFO] log - rank%2==1; 0
+[2016-08-24 19:56:05.154] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:56:05.154] [INFO] log - rank%2==1; 0
+[2016-08-24 19:56:05.154] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:56:05.154] [INFO] log - rank%2==1; 0
+[2016-08-24 19:56:05.155] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:56:05.155] [INFO] log - rank%2==1; 0
+[2016-08-24 19:56:05.155] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:56:05.155] [INFO] log - rank%2==1; 0
+[2016-08-24 19:56:05.155] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:56:05.156] [INFO] log - rank%2==1; 0
+[2016-08-24 19:56:05.156] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:56:05.156] [INFO] log - rank%2==1; 0
+[2016-08-24 19:56:05.156] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:56:05.156] [INFO] log - rank%2==1; 0
+[2016-08-24 19:56:05.156] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:56:05.157] [INFO] log - rank%2==1; 0
+[2016-08-24 19:56:05.157] [INFO] log - []
+[2016-08-24 19:57:11.213] [INFO] log - 1 '-' undefined
+[2016-08-24 19:57:11.215] [INFO] log - []
+[2016-08-24 19:57:11.216] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:57:11.216] [INFO] log - rank%2==1; 0
+[2016-08-24 19:57:11.216] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:57:11.216] [INFO] log - rank%2==1; 0
+[2016-08-24 19:57:11.216] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:57:11.216] [INFO] log - rank%2==1; 0
+[2016-08-24 19:57:11.216] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:57:11.216] [INFO] log - rank%2==1; 0
+[2016-08-24 19:57:11.217] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:57:11.217] [INFO] log - rank%2==1; 0
+[2016-08-24 19:57:11.217] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:57:11.217] [INFO] log - rank%2==1; 0
+[2016-08-24 19:57:11.217] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:57:11.217] [INFO] log - rank%2==1; 0
+[2016-08-24 19:57:11.218] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:57:11.218] [INFO] log - rank%2==1; 0
+[2016-08-24 19:57:11.218] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:57:11.219] [INFO] log - rank%2==1; 0
+[2016-08-24 19:57:11.219] [INFO] log - starValue = rank/2; 4
+[2016-08-24 19:57:11.219] [INFO] log - rank%2==1; 0
+[2016-08-24 19:57:11.219] [INFO] log - []
+[2016-08-24 19:58:32.744] [INFO] log - 1 '-' 18
+[2016-08-24 19:58:32.745] [INFO] log - [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+[2016-08-24 19:58:32.747] [INFO] log - [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]

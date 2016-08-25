@@ -1,10 +1,7 @@
 'use strict';
 
 var request = require("request");
-var IndexModel = require('../models/index');
-//var dust = require('dustjs-linkedin')
-//require('dustjs-helpers')
-
+var apartmentHelper = require('../helper/apartment');
 
 exports.search =  function (req, res){
     //console.log(dust.helpers);
@@ -32,29 +29,28 @@ exports.search =  function (req, res){
     request(uri, function (error, response, body) {
         if (!error && response.statusCode == 200) {
             var result = JSON.parse(body);
-            result.pages = new Array();
-            var start = 1;
-            if(result.page>6){
-                start=result.page-5;
-            }
-            console.log("start="+start)
-            var j=0;
-            for (var i = start; i <= result.endPage; i++) {
-                if(j>=10) break;
-                result.pages[j++]=i;
-            }
+
+            result.pages = apartmentHelper.calculatePages(result.page ,result.endPage);
+            result.apartments.forEach(function(apt){
+                apt.stars=apartmentHelper.calculateStar(apt.rank);
+            })
+            logger.info(result);
             res.render('apartments', result);
         }
     });
 }
 
 exports.detail =  function (req, res){
-    var model = new IndexModel();
-    console.log("req.params.id="+req.params.id);
+
     var uri = appSettings.api+"/apartment/"+req.params.id;
+    if( req.query.college &&  req.query.college!=""){
+        uri+="?college=";
+        uri+=req.query.college;
+    }
     request(uri, function (error, response, body) {
         if (!error && response.statusCode == 200) {
             var result = JSON.parse(body);
+            result.stars = apartmentHelper.calculateStar(result.rank);
             res.render('apartment', result);
         }
     });

@@ -12,8 +12,8 @@
 
 <div class="filtertop">
   <div class="w cf">
-    <h2><span class="icon-mapm"></span>伦敦<span class="icon-right"></span><span class="icon-grad"></span>卡斯商学院</h2>
-  <p>附近有超过84个留学生公寓，约23455个房间</p></div>
+    <h2><span class="icon-mapm"></span>{city.name}{?college}<span class="icon-right"></span><span class="icon-grad"></span>{college.name}{/college}</h2>
+  <p>附近有超过{total}个留学生公寓，约{@math key=total method="multiply" operand="11"/}个房间</p></div>
 </div>
 
 <div class="filtertool">
@@ -22,9 +22,9 @@
     <dl class="dropdown">
       <dt><span class="icon-down"></span><span class="icon-mapm"></span>选择城市</dt>
       <dd class="scroller">
-        <span>伦敦</span>
-        <span>利物浦</span>
-        <span>谢菲尔德</span>
+        {#cities}
+        <span>{name}</span>
+        {/cities}
       </dd>
     </dl>
 
@@ -59,7 +59,11 @@
     <div class="apttro">
       <h4><a href="/apartment_{id}.html">{name}</a></h4>
       <p class="reviewstars">
-            <span class="icon-sf"></span><span class="icon-sf"></span><span class="icon-sf"></span><span class="icon-sh"></span><span class="icon-se"></span>
+      {#.stars}
+              {@eq key=. value=0}<span class="icon-se"></span>{/eq}
+              {@eq key=. value=1}<span class="icon-sh"></span>{/eq}
+              {@eq key=. value=2}<span class="icon-sf"></span>{/eq}
+       {/.stars}
       </p>
       <p class="aptbrief">步行5分钟可到Liverpool Street地铁站，距离著名的Spitalfields集市仅几步距离著名的Spitalfields集市仅几步之遥...</p>
     </div>

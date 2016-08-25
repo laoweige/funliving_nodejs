@@ -1,6 +1,6 @@
 {>"layouts/funliving" /}
 
-{<title }番茄留学公寓 详情{/title}
+{<title }{name} 番茄留学公寓 详情{/title}
 
 {<link }
 <link rel="stylesheet" type="text/css" href="/css/apt.css">
@@ -18,7 +18,13 @@
   <h1 class="aptName">{name}</h1>
   <div class="aptloc">
     <span class="icon-mapm"></span>{address}
-    <div class="reviewstars"><span class="icon-sf"></span><span class="icon-sf"></span><span class="icon-sf"></span><span class="icon-sh"></span><span class="icon-se"></span></div>
+    <div class="reviewstars">
+    {#stars}
+        {@eq key=. value=0}<span class="icon-se"></span>{/eq}
+        {@eq key=. value=1}<span class="icon-sh"></span>{/eq}
+        {@eq key=. value=2}<span class="icon-sf"></span>{/eq}
+    {/stars}
+    </div>
   </div>
 
 
@@ -33,8 +39,9 @@
     <div class="fixedtab"><a href="#room-1">公寓地址</a><a href="#room-2">公寓设施</a><a href="#room-3">公寓概况</a><a href="#room-4">标题范例</a><a href="#room-5">周边场所</a></div>
     <div class="aptclist" id="room-1">
       <h3 class="aptcltit">公寓地址</h3>
-      <div class="aptaddr">19-29 Woburn, Bloomsbury街区, 伦敦, WC1H 0AQ     <a href="">查看地图</a></div>
-      <div class="aptcgo">前往学校时间：打车6分钟，公交12分钟，步行31分钟</div>
+      <div class="aptaddr">{address}     <a href="">查看地图</a></div>
+      {?distance}
+      <div class="aptcgo">前往学校时间：打车{distance.drive}分钟，地铁{distance.metro}分钟，步行{distance.walk}分钟</div>{/distance}
     </div>
 
     <div class="aptclist" id="room-2">

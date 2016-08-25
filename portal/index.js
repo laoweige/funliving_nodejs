@@ -22,6 +22,7 @@ options = {
 };
 
 global.appSettings = require('./config/appSettings');
+global.logger = require('./helper/logger');
 
 app = module.exports = express();
 app.use(kraken(options));

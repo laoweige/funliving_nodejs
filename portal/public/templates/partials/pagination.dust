@@ -2,21 +2,21 @@
     <div class="w">
         <div class="pagerto">
     {@ne key=page value=1}
-        <a href="?page={@math key=page method="subtract" operand="1"/}&city={city}">上一页</a>
+        <a href="?page={@math key=page method="subtract" operand="1"/}{?queryParameters}&{queryParameters}{/queryParameters}">上一页</a>
     {:else}
         <a href="#" class="disable">上一页</a>
     {/ne}
             {#pages}
-            <a href="?page={.}&city={city}" {@eq key=. value=page} class="disable"{/eq} >{.}</a>
+            <a href="?page={.}{?queryParameters}&{queryParameters}{/queryParameters}" {@eq key=. value=page} class="disable"{/eq} >{.}</a>
             {/pages}
 
         {@ne key=page value=endPage}
-            <a href="?page={@math key=page method="add" operand="1"/}&city={city}">下一页</a>
+            <a href="?page={@math key=page method="add" operand="1"/}{?queryParameters}&{queryParameters}{/queryParameters}">下一页</a>
         {:else}
             <a href="" class="disable">下一页</a>
         {/ne}
 
         </div>
-            <p><span class="icon-mapm"> 当前所选位置： {address}</p>
+            <p><span class="icon-mapm"> 当前所选位置： {city.name}{?college} {college.name}{/college}</p>
     </div>
 </div>
