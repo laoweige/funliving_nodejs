@@ -1,11 +1,11 @@
 {>"layouts/funliving" /}
 
-{<title }番茄留学公寓 列表 伦敦{/title}
+{<title }番茄留学公寓 列表 {city.name}{/title}
 
 {<link }<link rel="stylesheet" type="text/css" href="/css/apt.css">{/link}
 
 {<script}
-<script src="/jquery.min.js"></script>
+<script src="/js/jquery.js"></script>
 {/script}
 
 {<body}
@@ -20,19 +20,19 @@
   <div class="w cf">
   <div class="ft-l"><h5>城市及学校</h5>
     <dl class="dropdown">
-      <dt><span class="icon-down"></span><span class="icon-mapm"></span>选择城市</dt>
+      <dt><span class="icon-down"></span><span class="icon-mapm"></span>{city.name}</dt>
       <dd class="scroller">
         {#cities}
-        <span>{name}</span>
+        <span><a href="/apartments?city={id}">{name}</a></span>
         {/cities}
       </dd>
     </dl>
 
       <dl class="dropdown shool">
-      <dt><span class="icon-down"></span><span class="icon-grad"></span>选择学校</dt>
+      <dt><span class="icon-down"></span><span class="icon-grad"></span>{?college}{college.name}{:else}选择学校{/college}</dt>
       <dd class="scroller">
       {#colleges}
-      <span>{name}</span>
+      <span><a href="/apartments?city={cityId}&college={id}&sort={coordinate}&rent1={rents[0]}&rent2={rents[1]}">{name}</a></span>
       {/colleges}
       </dd>
     </dl>
@@ -40,24 +40,32 @@
   </div>
   <div class="ft-r"><h5>价格区间</h5>
 
-<div class="price-slider"><img src="imgs/r.png"></div>
-
-
+<div class="price-slider">
+<input id="rent1" name="rent1" type="text" style="border:dotted #009;width:80px" value="{@ne key=rents[0] value="0"}{rents[0]}{/ne}"/>
+- <input id="rent2" name="rent2" style="border:dotted #009 ;width:80px" type="text" value="{@ne key=rents[1] value="90000"}{rents[1]}{/ne}"/>
+&nbsp;<input id="rentBtn" type="button" value="确定" style="border:dotted #009 ;width:40px"/>
+</div>
   </div>
   </div>
 </div>
 
 <div class="filtersort">
-  <div class="w">排序： <ul class="sortli"><li>默认</li><li>价格<i class="down"></i></li><li>距离<i></i></li></ul> <strong class="spcsort">地图查看</strong> <span class="f_r"><b>{total}</b>个附近公寓</span></div>
+  <div class="w">排序： <ul class="sortli">
+  <li><a href="/apartments?city={city.id}{?colleges}&college={college.id}&sort={college.coordinate}{/colleges}&rent1={rents[0]}&rent2={rents[1]}">默认</a></li>
+  <li><a href="/apartments?city={city.id}{?colleges}&college={college.id}{/colleges}&sort=Rent&rent1={rents[0]}&rent2={rents[1]}">价格</a><i></i></li>
+  {?college}
+  <li><a href="/apartments?city={city.id}&college={college.id}&sort={college.coordinate}&rent1={rents[0]}&rent2={rents[1]}">距离</a><i></i></li>
+  {/college}
+  </ul> <strong class="spcsort">地图查看</strong> <span class="f_r"><b>{total}</b>个附近公寓</span></div>
 </div>
 
 <div class="aptslist w">
 
 {#apartments}
   <div class="aptitem cf">
-    <div class="aptpic"><a href="/apartment_{id}.html"><img src="{images}" width="235" height="180"></a></div>
+    <div class="aptpic"><a href="/apartment_{id}.html{?colleges}?college={college.id}{/colleges}"><img src="{images}" width="235" height="180"></a></div>
     <div class="apttro">
-      <h4><a href="/apartment_{id}.html">{name}</a></h4>
+      <h4><a href="/apartment_{id}.html{?colleges}?college={college.id}{/colleges}">{name}</a></h4>
       <p class="reviewstars">
       {#.stars}
               {@eq key=. value=0}<span class="icon-se"></span>{/eq}
@@ -67,10 +75,29 @@
       </p>
       <p class="aptbrief">步行5分钟可到Liverpool Street地铁站，距离著名的Spitalfields集市仅几步距离著名的Spitalfields集市仅几步之遥...</p>
     </div>
-    <div class="aptric">每周<div class="aprice"><strong>£{rent}</strong>起<p></p></div><a href="/apartment_{id}.html" class="adetail">查看详情<span class="icon-right"></span></a></div>
+    <div class="aptric">每周<div class="aprice"><strong>£{rent}</strong>起<p></p></div><a href="/apartment_{id}.html{?colleges}?college={college.id}{/colleges}" class="adetail">查看详情<span class="icon-right"></span></a></div>
   </div>
 {/apartments}
 </div>
 
  {>"partials/pagination"/}
 {/body}
+
+{<footer}
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#rentBtn").click(function(){
+
+        if($("#rent1").val()!="" || $("#rent2").val()!=""){
+            {@eq key=sort value="Rent"}
+            location.href = "/apartments?city={city.id}{?colleges}&college={college.id}{/colleges}&sort=Rent&rent1="+$("#rent1").val()+"&rent2="+$("#rent2").val();
+            {:else}
+            location.href = "/apartments?city={city.id}{?colleges}&college={college.id}&sort={college.coordinate}{/colleges}&rent1="+$("#rent1").val()+"&rent2="+$("#rent2").val();
+            {/eq}
+        }else{
+            alert("请输入价格区间");
+        }
+    });
+});
+</script>
+{/footer}

@@ -11,7 +11,7 @@
 <body>
 <div class="top">
   <div class="w cf">
-    <a href="index.html" class="tlogo"><img src="imgs/logo.png"></a
+    <a href="/" class="tlogo"><img src="imgs/logo.png"></a
       ><ul class="topcon">
       <li class="moretabs"><strong>帮助<span class="icon-down"></span></strong>
         <div class="tabs"><ul>
@@ -20,7 +20,7 @@
           <li><a href="#">其他帮助</a></li>
         </ul></div>
       </li>
-      <li class="loginup"><a href="">注册</a>|<a href="">登录</a></li>
+      <li class="loginup"><a href="/signup">注册</a>|<a href="/login">登录</a></li>
     </ul></div></div>
 
 {+body /}
@@ -37,3 +37,4 @@
 
 {+footer /}
 </body>
+</html>

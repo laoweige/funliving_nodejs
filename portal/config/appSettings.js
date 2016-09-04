@@ -2,6 +2,8 @@
 module.exports = {
     isDebug: true,
     host: 'fanliving.com',
-    api: 'http://localhost:8001'
-    // api: 'http://172.17.3.10:8080'
+    secret:'910178445',
+    // api: 'http://localhost:8001'
+    api: 'http://172.17.3.10:8080'
+    // api: 'http://localhost:8802'
 }

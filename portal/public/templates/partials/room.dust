@@ -5,39 +5,71 @@
       </div>
       <div class="aplycons">
         <h3>预订提交</h3>
+        <form  method="post" action="/schedule">
         <div class="aplyiput cf">
-        <dl class="cf"><dt>开始时间</dt><dd><div class="pickdate">选择开始时间<span class="icon-down"></span></div></dd></dl>
-        <dl class="cf"><dt>退房时间</dt><dd><div class="pickdate">选择开始时间<span class="icon-down"></span></div></dd></dl>
-        <dl class="cf"><dt>填写姓名</dt><dd><input class="apint" type="text" placeholder="填写姓名"></dd></dl>
-        <dl class="cf"><dt>联系电话</dt><dd><input class="apint" type="tell" placeholder="填写电话"></dd></dl>
-        <dl class="cf"><dt>常用邮箱</dt><dd><input class="apint" type="mail" placeholder="填写邮箱"></dd></dl>
+        <input type="hidden" id="roomId" name="roomId" value=""/>
+        <input type="hidden" id="apartmentId" name="apartmentId" value=""/>
+        <dl class="cf"><dt>开始时间</dt><dd><input id="startTime" name="startTime" class="apint" type="date" placeholder="格式 如：2016-10-01"></dd></dl>
+        <dl class="cf"><dt>退房时间</dt><dd><input id="endTime" name="endTime" class="apint" type="date" placeholder="格式 如：2016-10-01"></dd></dl>
+        <dl class="cf"><dt>填写姓名</dt><dd><input id="name" name="name" class="apint" type="text" placeholder="填写姓名"></dd></dl>
+        <dl class="cf"><dt>联系电话</dt><dd><input id="mobile" name="mobile" class="apint" type="tell" placeholder="填写电话"></dd></dl>
+        <dl class="cf"><dt>常用邮箱</dt><dd><input id="email" name="email" class="apint" type="mail" placeholder="填写邮箱"></dd></dl>
         </div>
-        <div class="aptbtnlay"><input type="submit" class="btnapl" value="提交"><p>提交预订信息，我们会安排顾问</p></div>
-
+        <div class="aptbtnlay"><input type="button" class="btnapl" value="提交"><p>提交预订信息，我们会安排顾问</p></div>
+        </form>
       </div>
 </div>
 
 <div class="roomslay">
-    <div class="roomtab">房间类型： <ul class="rtabs"><li class="curr">所有</li><li>多人间</li><li>单人间</li><li>套房</li></ul> <i class="roomqs">?<div><ul><li><strong>多人间</strong>卧室两人共享，卫浴独立或共享，客厅厨房共享。</li><li><strong>单人间</strong>卧室单人独享，卫浴独立或共享，客厅厨房共享。</li><li><strong>套房</strong>独享卧室、卫浴、客厅、厨房等所有设施。</li></ul></div></i></div>
+    <div class="roomtab">房间类型： <ul class="rtabs"><li>多人间</li><li class="curr">单人间</li><li>套房</li></ul> <i class="roomqs">?<div><ul><li><strong>多人间</strong>卧室两人共享，卫浴独立或共享，客厅厨房共享。</li><li><strong>单人间</strong>卧室单人独享，卫浴独立或共享，客厅厨房共享。</li><li><strong>套房</strong>独享卧室、卫浴、客厅、厨房等所有设施。</li></ul></div></i></div>
     <div class="roomlist">
         {#rooms}
         <div class="roomitem cf">
           <div class="rtml"><h5>{name}</h5>
               <ul>
                 <li>套房间</li>
-                <li>舒适间 18 - 20 sqm</li>
+                <li>舒适间 {acreage1}{?acreage2} - {acreage2} {/acreage2}  sqm</li>
                 {@select key=type}
-                    {@eq value=1}<li>单人床 Single bed</li>{/eq}
-                    {@eq value=2}<li>多人间 Single bed</li>{/eq}
-                    {@eq value=3}<li>套房 Single bed</li>{/eq}
+                    {@eq value=1}<li>单人床 </li>{/eq}
+                    {@eq value=2}<li>多人间 </li>{/eq}
+                    {@eq value=3}<li>套房</li>{/eq}
                 {/select}
                 {@eq key=toilet value=1}<li>独立卫浴 Private ensuite</li>{/eq}
               </ul>
           </div>
           <div class="rtmr">
-            <div class="rtmpri"><strong>￡{rent}</strong>起</div><a href="">预订</a>
+            <div class="rtmpri"><strong>￡{rent}</strong>起</div><a href="" onclick="setRoom({apartmentId},{id})">预订</a>
           </div>
         </div>
         {/rooms}
     </div>
 </div>
+<script>
+
+
+$(".btnapl").click(function(){
+  txt=$("input").val();
+  $.post("/schedule",{"name":$("#name").val(),
+                         "mobile":$("#mobile").val(),
+                         "email":$("#email").val(),
+                         "startTime":$("#startTime").val(),
+                         "apartmentId":$("#apartmentId").val(),
+                         "roomId":$("#roomId").val(),
+                         "endTime":$("#endTime").val()},
+                         function(result){
+    if(result!="0"){
+        alert("预定成功-确定后将跳转到申请表单页面");
+        $('.roomslay').removeClass('hide');
+        $('.roomaply').addClass('hide');
+        location.href ="/apply?id="+result;
+    }else{
+        alert("预定失败");
+    }
+  });
+});
+
+function setRoom(apartmentId,roomId){
+    $("#apartmentId").val(apartmentId);
+    $("#roomId").val(roomId)
+}
+</script>

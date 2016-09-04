@@ -2,6 +2,7 @@
 
 var express = require('express');
 var kraken = require('kraken-js');
+var cookieParser = require('cookie-parser');
 
 
 
@@ -25,7 +26,14 @@ global.appSettings = require('./config/appSettings');
 global.logger = require('./helper/logger');
 
 app = module.exports = express();
+// app.use(kraken(options));
+// app.use(cookieParser());
+
+
+// options = require('./lib/spec')(app);
+
 app.use(kraken(options));
+
 app.on('start', function () {
     console.log('Application ready to serve requests.');
     console.log('Environment: %s', app.kraken.get('env:env'));

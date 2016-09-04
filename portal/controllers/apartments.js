@@ -4,7 +4,10 @@ var request = require("request");
 var apartmentHelper = require('../helper/apartment');
 
 exports.search =  function (req, res){
-    //console.log(dust.helpers);
+    if(req.cookies["user"]) {
+        console.log("req.cookies[user].name=" + req.cookies["user"].name);
+    }
+
     var uri = appSettings.api+"/search?city=";
     uri+=req.query.city;
 
@@ -12,9 +15,16 @@ exports.search =  function (req, res){
         uri+="&college=";
         uri+=req.query.college;
     }
-    if( req.query.rent &&  req.query.rent!=""){
+    var rents = ["0","90000"];
+    if(req.query.rent1){
+        rents[0]=req.query.rent1;
+    }
+    if(req.query.rent2){
+        rents[1]=req.query.rent2;
+    }
+    if(rents[0]!="0" || rents[1]!="90000"){
         uri+="&rent=";
-        uri+=req.query.rent;
+        uri+=rents.join(",");
     }
     if( req.query.pageSize &&  req.query.pageSize!=""){
         uri+="&pageSize=";
@@ -24,6 +34,11 @@ exports.search =  function (req, res){
         uri+="&page=";
         uri+=req.query.page;
     }
+    if( req.query.sort &&  req.query.sort!=""){
+        uri+="&sort=";
+        uri+=req.query.sort;
+    }
+
 
     console.log(uri);
     request(uri, function (error, response, body) {
@@ -34,7 +49,9 @@ exports.search =  function (req, res){
             result.apartments.forEach(function(apt){
                 apt.stars=apartmentHelper.calculateStar(apt.rank);
             })
-            logger.info(result);
+            result.rents=[rents[0],rents[1]];
+            result.sort=req.query.sort;
+            // logger.info(result);
             res.render('apartments', result);
         }
     });

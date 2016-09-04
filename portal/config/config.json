@@ -46,7 +46,14 @@
     },
 
     "middleware": {
-
+//        "cookieParser": {
+//            "module": {
+//                "name": "cookie-parser",
+//                "arguments": [
+//                    "your better secret value"
+//                ]
+//            }
+//        },
 
         "makara": {
             "priority": 100,
@@ -73,7 +80,21 @@
             "module": {
                 "arguments": [{ "index": "path:./router" }]
             }
+        },
+        "appsec": {
+            "enabled": true,
+            "priority": 60,
+            "module": {
+                "name": "lusca",
+                "arguments": [
+                    {
+                        "csrf": false,
+                        "xframe": "SAMEORIGIN",
+                        "p3p": false,
+                        "csp": false
+                    }
+                ]
+            }
         }
-
     }
 }
