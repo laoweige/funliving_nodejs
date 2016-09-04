@@ -1,0 +1,36 @@
+{
+
+    "middleware": {
+
+        "devtools": {
+            "enabled": true,
+            "priority": 35,
+            "module": {
+                "name": "construx",
+                "arguments": [
+                    "path:./public",
+                    "path:./.build",
+                    {
+                        
+                        "template": {
+                            "module": "construx-dustjs",
+                            "files": "/templates/**/*.js",
+                            "base": "templates"
+                        },
+                        
+                        
+                        "css": {
+                            "module": "construx-less",
+                            "files": "/css/**/*.css"
+                        },
+                        
+                        "copier": {
+                            "module": "construx-copier",
+                            "files": "**/*"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{>"layouts/funliving" /}
+
+{<title }注册 | 番茄留学公寓{/title}
+
+{<link }
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/others.css">
+{/link}
+
+{<body}
+
+<h2 class="bytit">注册帐户</h2>
+<div class="loginlay">
+<div class="loginL">
+<h3>注册</h3>
+  <ul>
+    <li><input class="apint" type="text" placeholder="输入手机号"></li>
+    <li class="cf"><input class="apint smsfy" type="text" placeholder="请输入右侧图片内容"><img class="fyimg" src="https://mp.weixin.qq.com/cgi-bin/verifycode?r=1472465271946"></li>
+    <li><input class="apint smsfy" type="text" placeholder="短信验证码"><span class="smsend">点击获取</span></li>
+    <li><input class="apint" type="password" placeholder="输入密码"></li>
+  </ul>
+  <div class="loginbly">
+        <button class="lgoinbtn">提交</button></a>
+      </div>
+</div>
+
+<div class="loginR">
+<ul>
+<li><a href="" class="wxlogin">通过微信登录</a></li>
+<li><a href="" class="nosetup">已由帐号，直接登录</a></li>
+</ul>
+</div>
+
+<div class="lgbtm cf">如果您有问题， 欢迎随时提问。      400-0067-400</div>
+  </div>
+</div>
+
+{/body}
+{<footer}
+<script src="/js/jquery.js"></script>
+<script src="/js/scripts.js"></script>
+{/footer}

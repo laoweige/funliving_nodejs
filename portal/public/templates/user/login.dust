@@ -1,0 +1,43 @@
+{>"layouts/funliving" /}
+
+{<title }登录 | 番茄留学公寓{/title}
+
+{<link }
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/others.css">
+{/link}
+
+{<body}
+
+<h2 class="bytit">登录</h2>
+<div class="loginlay">
+<div class="loginL">
+
+<h3>登录</h3>
+<form  method="post" action="/login">
+  <ul>
+    <li><input name="mobile" class="apint" type="text" placeholder="输入手机号码或邮箱"></li>
+    <li><input name="password" class="apint" type="password" placeholder="输入密码"></li>
+  </ul>
+  <div class="loginbly">
+        <button class="lgoinbtn" type="submit">登录</button>
+        <font color=red>{?message}{message}{/message}</font>
+      </div>
+      </form >
+</div>
+
+<div class="loginR">
+<ul>
+<li><a href="" class="wxlogin">通过微信登录</a></li>
+<li><a href="" class="nosetup">没有帐户？注册新帐户</a></li>
+</ul>
+</div>
+
+<div class="lgbtm cf">如果您有问题， 欢迎随时提问。      400-0067-400</div>
+  </div>
+</div>
+{/body}
+{<footer}
+<script src="/js/jquery.js"></script>
+<script src="/js/scripts.js"></script>
+{/footer}

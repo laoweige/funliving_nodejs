@@ -1,0 +1,78 @@
+@charset "UTF-8";html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,em,img,strong,b,i,dl,dt,dd,ol,ul,li,form,label,input,textarea,table,tbody,tfoot,thead,tr,th,td,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{line-height:1.5}ol,ul{list-style:none;list-style-image:none;margin:0;padding:0}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+body,textarea{font-family:"helvetica neue",helvetica,arial}
+body{text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-moz-font-feature-settings:"liga","kern";height:100%;font-size:14px}
+a,a:hover{text-decoration:none}
+a{color:#333;font-size:1em}
+a:hover{color:#C31728}
+.f_r{float:right;}
+*{padding:0;margin:0}
+.cf{clear:both}
+.cf:after{content:'';display:block;clear:both}
+@media(min-width:1020px){.w{width:960px;margin:auto}}
+.hide{display:none!important}
+
+.tophead{height:56px;background-color:#760E17;color:#fff;position:fixed;width:100%;z-index:99}
+.fqlogo{width:160px;height:56px;background-color:#C31728;text-align:center;line-height:56px;font-size:20px;font-weight:bold;float:left}
+.leftlay{width:160px;position:fixed;left:0;top:56px;box-shadow: 1px 1px 1px 1px #ddd;height:inherit;}
+.bodylay{padding:56px 0 0 160px}
+
+.hnavs{margin-left:180px}
+.hnavs li,.ustat li{display:inline-block;line-height:56px;padding-left:12px;font-size:1.1em}
+.ustat li{padding-left:0;font-size:14px;}
+.hnavs li a,.hnavs li a:visited,.ustat li a,.ustat li a:visited{color:#fff;padding:0 5px}
+.hnavs li a:hover,.ustat li a:hover{color:#D3AEAE}
+.ustat{float:right;margin-right:10px}
+.leftmenu{padding:20px 10px 20px 20px}
+.leftmenu li{padding:4px 10px}
+
+.bodyhead{height:100px;background-color:#f9f9f9;border-bottom:1px solid #e2e2e2}
+.btn{display:inline-block;background-color:#337ab7;padding:6px 14px;border-radius:3px;border:1px solid #2e6da4;color:#fff;cursor:pointer;}
+.btn:hover{background-color:#2e6da4}
+input[type=text]{height:30px;line-height:30px;border:1px solid #ccc;background-color:#fff;border-radius:2px}
+.sfont{font-size:0.8em}
+.rbtn{background-color:#d11010;border-color:#c71414}
+.rbtn:hover{background-color:#dc3c3c;color:#fff}
+
+.addaptlay{padding:20px 30px 30px}
+.addaptbtn{text-align:center;}
+.addaptbtn .btn{padding:6px 20px;color:#fff;}
+.aptlist li{padding:20px;border-bottom:1px solid #f6f6f6}
+.aptlist li img{width:120px;height:85px;}
+.morepage{padding:20px;text-align:center;}
+.morepage a{margin:0 5px;padding:3px 5px}
+.addapt{padding:10px 0 30px}
+.addapt dl{clear:both;padding:8px 0;position:relative;}
+.addapt dt{width:100px;text-align:left;position:absolute;left:0;top:10px}
+.addapt dd{padding-left:100px}
+.addapt dd input[type=text]{width:300px}
+.addimgs{clear:both}
+.addimgs a{color:#337ab7}
+.addimgs img{width:60px;height:60px;margin-right:8px;float:left;}
+.addimgs a.addimg{width:58px;height:58px;line-height:50px;text-align:center;border:1px solid #f7dada;background-color:#fff2f2;color:#ff3d3d;display:inline-block;font-size:2.5em;margin-left:10px}
+.addimgs a.addimg:hover{background-color:#fee7e7;border-color:#ffcbcb}
+.aptfitting label{padding:4px 0;display:inline-block;width:110px;}
+.aptfitting label input[type=checkbox]{margin-right:3px}
+.aptcmstit{font-size:16px;font-weight:bold;color:#111;color:#8e0611;border-bottom:1px solid #eee;padding-bottom:10px}
+.addaptlay in{font-size:0.8em;margin-left:10px;color:#888}
+textarea{border:1px solid #ddd;border-radius:3px;width:600px;min-height:100px;text-indent:8px}
+.otherir{padding:0 0 10px}
+.otherir input[type=text]{width:600px!important;margin-bottom:-1px;text-indent:8px}
+.otherir textarea{min-height:80px;text-indent:8px}
+.s_b{font-size:14px;font-weight:normal;padding:2px 8px;float:right;margin-right:10px}
+.adrtab{padding:20px 0 10px}
+.adrtab li{display:inline-block;padding:3px 12px;background-color:#eee;margin-right:10px;font-size:13px;cursor:pointer;}
+.adrtab li.on{background-color:#f1aeae}
+.addroom{padding:20px 30px ;background-color:#f6f6f6;display:none}
+.addroom dl{padding:5px 0;}
+.addroom dl dd{padding-left:60px}
+.addroom dl select{margin-top:5px}
+.addroom dl input{height:26px;line-height:26px}
+.addroom i{font-size:13px;color:#888;margin-left:10px}
+.roomslist{padding-bottom:30px}
+.roomslist li{border:1px solid #ddd;width:360px;height:65px;margin:0 10px 10px 0;float:left;font-size:13px}
+.roomslist li h4{padding:10px 10px 5px;font-weight:bold;}
+.roomslist li h4 strong{color:#f50000;float:right;}
+.roomslist li div{padding:0 5px 10px;color:#888}
+.roomslist li:hover{background-color:#f9f9f9}
+.roomslist li b{margin:0 5px}
+

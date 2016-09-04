@@ -1,0 +1,26 @@
+{>"layouts/master" /}
+{<title }公寓 列表{/title}
+
+{<link }
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+{/link}
+
+{<script}
+<script src="/js/jquery.js"></script>
+{/script}
+
+{<body}
+ <div class="addaptlay">
+<br/>
+城市：<select name="city"><option value="1">伦敦</option><option value="2">利物浦</option></select><br/>
+<table >
+<th height="30px">公寓名字</th><th>价格</th><th>操作</th>
+{#list}
+<tr  height="20px"><td width="200">
+{name}</td><td width="100">{rent}</td><td><a href="http://139.224.69.217/apartment_{id}.html" target="_blank">预览</a> -  <a href="/apartment/room?apartmentId={id}" target="_blank">添加房间</a></li>
+</td></tr>
+{/list}
+</table>
+</div>
+{/body}
+

@@ -1,0 +1,141 @@
+{>"layouts/master" /}
+{<title }公寓添加{/title}
+
+{<link }
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+{/link}
+
+{<script}
+<script src="/js/jquery.js"></script>
+{/script}
+
+{<body}
+    <div class="addaptlay">
+      <h3 class="aptcmstit">添加公寓</h3>
+      <div class="addapt">
+<form  method="post" action="/apartment/add" enctype="multipart/form-data">
+        <input type="hidden" name="nation" value="1" />
+        <input type="hidden" name="coordinate" value="1.3434,123.24" />
+        <dl><dt>公寓名称</dt><dd><input type="text" name="name"></dd></dl>
+
+        <dl><dt>公寓图片</dt><dd><input id="carouselUpload" name="carouselUpload" type="file" multiple="multiple"/></dd></dl>
+
+        <dl><dt>公寓等级</dt><dd><select name="rank"><option value="1">1</option><option value="2">2</option>
+        <option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option>
+        <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+        <option value="10">10</option>
+        </select></dd></dl>
+        <dl><dt>所在城市</dt><dd><select name="city"><option value="1">伦敦</option><option value="2">利物浦</option></select></dd></dl>
+        <dl><dt>最低价格</dt><dd><input type="text" name="rent"></dd></dl>
+        <dl><dt>公寓地址</dt><dd><input type="text" name="address"></dd></dl>
+        <dl><dt>公寓邮编</dt><dd><input type="text" name="postcode"></dd></dl>
+        <dl><dt>供应商为</dt><dd><select name="supplier"><option>UNITE STUDENTS</option></select> <a href="" class="sfont"> ＋新供应商</a></dl>
+        <dl class="addimgs"><dt>公寓图片</dt><dd>
+        <img src="https://img3.doubanio.com/view/photo/thumb/public/p2188095454.jpg">
+        <img src="https://img3.doubanio.com/view/photo/thumb/public/p2188095454.jpg">
+        <img src="https://img3.doubanio.com/view/photo/thumb/public/p2188095454.jpg">
+        <img src="https://img3.doubanio.com/view/photo/thumb/public/p2188095454.jpg">
+        <img src="https://img3.doubanio.com/view/photo/thumb/public/p2188095454.jpg">
+         <a href="">...共23张</a>
+        <a href="" class="addimg">+</a>
+        </dl>
+        <dl class="aptfitting"><dt>公寓设施</dt><dd>
+        <label><input type="checkbox" name="facility" value=1>WiFi</label>
+        <label><input type="checkbox" name="facility" value=2>包水费</label>
+        <label><input type="checkbox" name="facility" value=3>包电费</label>
+        <label><input type="checkbox" name="facility" value=4>包暖气费</label>
+        <label><input type="checkbox" name="facility" value=5>安全门禁</label>
+        <label><input type="checkbox" name="facility" value=6>安保人员</label>
+        <label><input type="checkbox" name="facility" value=7>24小时监控</label>
+        <label><input type="checkbox" name="facility" value=8>24小时热水</label>
+        <label><input type="checkbox" name="facility" value=9>全套家具</label>
+        <label><input type="checkbox" name="facility" value=10>厨房用品</label>
+        <label><input type="checkbox" name="facility" value=11>有线电视</label>
+        <label><input type="checkbox" name="facility" value=12>自习室</label>
+        <label><input type="checkbox" name="facility" value=13>洗衣房</label>
+        <label><input type="checkbox" name="facility" value=14>电梯</label>
+        <label><input type="checkbox" name="facility" value=15>自行车库</label>
+        <label><input type="checkbox" name="facility" value=16>停车位</label>
+        <label><input type="checkbox" name="facility" value=17>健身房</label>
+        <label><input type="checkbox" name="facility" value=18>娱乐区</label>
+        <label><input type="checkbox" name="facility" value=19>电影放映室</label>
+        <label><input type="checkbox" name="facility" value=20>保险</label>
+        <label><input type="checkbox" name="facility" value=21>保洁服务</label>
+        <label><input type="checkbox" name="facility" value=22>维修团队</label>
+        <label><input type="checkbox" name="facility" value=23>残疾人设施</label></dd></dl>
+        <dl><dt>公寓概况</dt><dd><textarea id="aptxt" name="description"></textarea></dd></dl>
+        <dl><dt>其他介绍</dt><dd>
+          <div class="otherir"><div><input type="text" placeholder="输入标题"></div>
+          <div><textarea id="aptxt" placeholder="输入介绍内容"></textarea></div></div>
+          <a href="">＋添加其他介绍</a>
+        </dd></dl>
+<button class="signbutton" type="submit">添加</button>
+                </form>
+    </div>
+
+        <div class="addapt">
+        <h3 class="aptcmstit">公寓房型 <span class="btn rbtn s_b" id="addRoom">＋添加房型</span></h3>
+
+        <div class="addroom cf">
+            <dl><dt>名字：</dt><dd><input type="text"></dl>
+            <dl><dt>房型：</dt><dd><select><option>单人间</option><option>双人间</option><option>多人间</option></select></dl>
+            <dl><dt>床型</dt><dd><select><option>单人床</option><option>双人床</option><option>3/4床</option></select></dd></dl>
+            <dl><dt>价格</dt><dd> £ <input type="text" style="width:60px"></dd></dl>
+            <dl><dt>面积</dt><dd><input type="text" style="width:40px"> m<sup>2</sup> — <input type="text" style="width:40px"> m<sup>2</sup><i>  非区间值只输入一个</i></dd></dl>
+            <dl><dt>卫厨</dt><dd><select><option>独立卫浴</option><option>共享卫浴</option></select> <select><option>共享厨房</option><option>独立厨房</option></select></dd></dl>
+            <dl><dt></dt><dd><button class="btn">确定</button></dd></dl>
+        </div>
+
+        <ul class="adrtab"><li class="on">单人房</li><li>多人房</li><li>套房</li></ul>
+        <ul class="roomslist cf">
+          <li><h4>Premium Range 1 One Bedroom Flat <strong>$ 218</strong></h4>
+          <div><b>单人床</b><b>独立卫浴</b><b>独立厨房</b><b>18 - 20 sqm</b></div></li>
+          <li><h4>Premium Range 1 One Bedroom Flat <strong>$ 218</strong></h4>
+          <div><b>单人床</b><b>独立卫浴</b><b>独立厨房</b><b>18 - 20 sqm</b></div></li>
+          <li><h4>Premium Range 1 One Bedroom Flat <strong>$ 218</strong></h4>
+          <div><b>单人床</b><b>独立卫浴</b><b>独立厨房</b><b>18 - 20 sqm</b></div></li>
+          <li><h4>Premium Range 1 One Bedroom Flat <strong>$ 218</strong></h4>
+          <div><b>单人床</b><b>独立卫浴</b><b>独立厨房</b><b>18 - 20 sqm</b></div></li>
+          <li><h4>Premium Range 1 One Bedroom Flat <strong>$ 218</strong></h4>
+          <div><b>单人床</b><b>独立卫浴</b><b>独立厨房</b><b>18 - 20 sqm</b></div></li>
+          <li><h4>Premium Range 1 One Bedroom Flat <strong>$ 218</strong></h4>
+          <div><b>单人床</b><b>独立卫浴</b><b>独立厨房</b><b>18 - 20 sqm</b></div></li>
+        </ul>
+
+      </div>
+     </div>
+{/body}
+{<footer}
+<script>
+$('#carouselUpload').change(function(event) {
+        /* Act on the event */
+        if ($('#carouselUpload').val().length) {
+
+            alert($('#carouselUpload').val().length);
+            var fileName = $('#carouselUpload').val();
+            var extension = fileName.substring(fileName.lastIndexOf('.'), fileName.length).toLowerCase();
+            if (extension == ".jpg" || extension == ".png") {
+
+                    var data = new FormData();
+                    data.append('upload', $('#fileToUpload')[0].files[0]);
+                    $.ajax({
+                        url: '/apartment/upload',
+                        type: 'POST',
+                        data: data,
+                        cache: false,
+                        contentType: false, //不可缺参数
+                        processData: false, //不可缺参数
+                        success: function(data) {
+                            console.log(data);
+                            alert(data);
+                        },
+                        error: function() {
+                            console.log('error');
+                        }
+                    });
+            }
+        }
+    });
+</script>
+{/footer}
+

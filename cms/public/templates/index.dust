@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>&#x1F345; FunCMS</title>
+<style type="text/css">
+body,textarea{font-family:helvetica,arial}
+body{text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-moz-font-feature-settings:"liga","kern";height:100%;font-size:14px;background-color:#fafafa}
+.inputsWrapper{margin:auto;width:300px;text-align: left;padding:50px 0 30px;}
+.groupinputs{border: 1px solid #d1d1d1;border-radius:3px;padding:1px 0;background-color:#fdfdfd}
+h1{color:#e50914;text-align:center;font-size:40px}
+.input-wrapper {position:relative;border-bottom:1px solid #d1d1d1}
+.input-wrapper:last-child {border-bottom:none}
+.input-wrapper input{padding:15px 12px;height:46px;width:100%;font-size:16px;line-height:18px;color:#555;border:none;outline:0;box-sizing:border-box;background-color:#fdfdfd}
+.input-wrapper input:focus{background-color:#fff}
+.button-wrapper{padding-top:20px}
+.signbutton{background: #e50914;border-radius:3px;height:42px;line-height:40px;
+display: block;padding: 0;width: 100%;font-size:16px;color: #fff;text-align: center;border: 1px solid #c5050e;outline: 0;cursor: pointer;}
+.signbutton:hover{background-color:#ff303a}
+.copyright{width:100%;height:20px;text-align:center;color:#888;position:absolute;bottom:10px;left:0}
+@media(max-height:460px){.copyright{position:static;}}
+</style>
+</head>
+<body>
+
+<div class="inputsWrapper">
+  <h1>FunCMS</h1>
+  <form  method="post" action="/">
+
+<div class="groupinputs">
+
+<div class="email input-wrapper">
+    <input type="text" name="mobile" placeholder="手机号码">
+</div>
+<div class="input-wrapper">
+    <input type="password" name="password" placeholder="输入密码">
+</div>
+
+</div>
+<div class="button-wrapper">
+<button class="signbutton" type="submit">登录</button> {?message}<br/><font color=red>{message}</font>{/message}
+</div>
+</form>
+</div>
+<div class="copyright">Copyright &copy; Funliving.com</div>
+
+</body>

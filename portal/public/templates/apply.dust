@@ -1,0 +1,110 @@
+{>"layouts/funliving" /}
+
+{<title }番茄留学公寓 首页{/title}
+
+{<link }
+<link rel="stylesheet" type="text/css" href="/css/apt.css">
+{/link}
+
+{<script}
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.22.0/mapbox-gl.js'></script>
+{/script}
+
+{<body}
+<h2 class="booktit">提交预订信息</h2>
+<div class="booklay">
+
+  <div class="bookbtt cf"><span><h3>Unite Students Woburn Place</h3>Premium Range 1 One Bedroom Flat</span><a href="">← 返回</a></div>
+
+  <div class="bookin">
+
+      <div class="bookblock cf">
+        <strong class="bkbltit">个人信息</strong>
+        <div class="bkblcon">
+          <dl class="cf"><dt>姓名</dt><dd><input id="name" class="apint" type="text" placeholder="填写姓名" value="{name}"></dd></dl>
+        <dl class="cf"><dt>性别</dt><dd><input type="radio" name="gender" value="1" ><label for="gender">男</label>  <input type="radio" name="gender" value="2"><label for="gender">女</label></dd></dl>
+        <dl class="cf"><dt>出生日期</dt><dd><input id="birthday" class="apint" type="date" placeholder="年/月/日"></dd></dl>
+        <dl class="cf"><dt>联系电话</dt><dd><input id="mobile" class="apint" type="tell" placeholder="填写电话" value="{mobile}"></dd></dl>
+        <dl class="cf"><dt>常用邮箱</dt><dd><input id="email" class="apint" type="mail" placeholder="填写邮箱" value="{email}"></dd></dl>
+        </div>
+      </div>
+
+      <div class="bookblock cf">
+        <strong class="bkbltit">学校信息</strong>
+        <div class="bkblcon">
+          <dl class="cf"><dt>学校</dt><dd><input id="university" class="apint" type="text" placeholder="即将入学的学校"></dd></dl>
+        <dl class="cf"><dt>专业</dt><dd><input id="major" class="apint" type="text" placeholder="所学专业"></dd></dl>
+        <dl class="cf"><dt>入学时间</dt><dd><input id="enterDate" class="apint" type="date" placeholder="年/月/日"></dd></dl>
+        </div>
+      </div>
+
+      <div class="bookblock cf">
+        <strong class="bkbltit">信用卡信息</strong>
+        <div class="bkblcon">
+          <dl class="cf"><dt>用户名</dt><dd><input id="creditName" class="apint" type="text" placeholder="持卡本人姓名"></dd></dl>
+        <dl class="cf"><dt>卡号</dt><dd><input id="creditCard1" class="apint" type="text" style="width:80px"> - <input id="creditCard2" class="apint" type="text" style="width:80px"> - <input id="creditCard3" class="apint" type="text" style="width:80px"> - <input id="creditCard4" class="apint" type="text" style="width:80px"></dd></dl>
+        <dl class="cf"><dt>安全码</dt><dd><input id="creditSecurity" class="apint" type="text" placeholder="三位安全码" style="width:120px"></dd></dl>
+        <dl class="cf"><dt>有效日期</dt><dd><input id="startDate" class="apint" type="month" placeholder="年/月"  style="width:150px"> /
+        <input id="expireDate" class="apint" type="month" placeholder="年/月"  style="width:150px"></dd></dl>
+        </div>
+      </div>
+
+      <div class="bookblock cf">
+        <strong class="bkbltit">担保人信息 <p>推荐填写父母为担保人</p> </strong>
+        <div class="bkblcon">
+        <dl class="cf"><dt>姓名</dt><dd><input id="assureName" class="apint" type="text" placeholder="填写姓名"></dd></dl>
+        <dl class="cf"><dt>性别</dt><dd><input type="radio" name="assureGender" value="1"><label for="na">男</label>  <input type="radio" name="assureGender" value="2"><label for="nv">女</label></dd></dl>
+        <dl class="cf"><dt>与本人关系</dt><dd><input id="assureRelation" class="apint" type="text" placeholder="与本人关系"></dd></dl>
+        <dl class="cf"><dt>出生日期</dt><dd><input id="assureBirthday" class="apint" type="date" placeholder="年/月/日"></dd></dl>
+        <dl class="cf"><dt>联系电话</dt><dd><input id="assureMobile" class="apint" type="tell" placeholder="填写电话"></dd></dl>
+        <dl class="cf"><dt>邮寄地址</dt><dd><input id="assureAddress" class="apint" type="text" placeholder="填写能够接收到信函的快递地址"></dd></dl>
+        </div>
+      </div>
+
+      <div class="bookblock cf">
+        <button class="booksbm">提交</button></a>
+      </div>
+
+  </div>
+</div>
+
+{/body}
+
+{<footer}
+<script src="js/jquery.js"></script>
+<script src="js/scripts.js"></script>
+<script>
+
+$(".booksbm").click(function(){
+  txt=$("input").val();
+  $.post("/",{"name":$("#name").val(),
+                             "gender":$("input:radio[name='gender']").val(),
+                             "birthday":$("#birthday").val(),
+                             "mobile":$("#mobile").val(),
+                             "email":$("#email").val(),
+                             "status":$("#status").val(),
+                             "university":$("#university").val(),
+                             "major":$("#major").val(),
+                             "enterDate":$("#enterDate").val(),
+                             "creditName":$("#creditName").val(),
+                             "creditCard":$("#creditCard1").val()+$("#creditCard2").val()+$("#creditCard3").val()+$("#creditCard4").val(),
+                             "creditSecurity":$("#creditSecurity").val(),
+                             "startDate":$("#startDate").val(),
+                             "expireDate":$("#expireDate").val(),
+                             "assureName":$("#assureName").val(),
+                             "assureGender":$("input:radio[name='assureGender']").val(),
+                             "assureRelation":$("#assureRelation").val(),
+                             "assureBirthday":$("#assureBirthday").val(),
+                             "assureMobile":$("#assureMobile").val(),
+                             "assureAddress":$("#assureAddress").val()},
+                         function(result){
+    if(result!="0"){
+        alert("申请成功-确定后将跳转到首页");
+        location.href ="/";
+    }else{
+        alert("申请失败");
+    }
+  });
+});
+</script>
+{/footer}

@@ -1,0 +1,45 @@
+{>"layouts/master" /}
+{<title }公寓添加{/title}
+
+{<link }
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+{/link}
+
+{<script}
+<script src="/js/jquery.js"></script>
+{/script}
+
+{<body}
+    <div class="addaptlay">
+      <h3 class="aptcmstit">添加房间</h3>
+
+        <div class="addapt">
+        <h3 class="aptcmstit">公寓房型 <span class="btn rbtn s_b" id="addRoom">＋添加房型</span></h3>
+  <form  method="post" action="/apartment/room?apartmentId={apartmentId}">
+        <div>
+            <input type="hidden" name="status" value="1" />
+            <input type="hidden" name="apartmentId" value="{apartmentId}" />
+            <dl><dt>名字：</dt><dd><input type="text" name="name"></dl>
+            <dl><dt>房型：</dt><dd><select name="type"><option value=1>单人间</option><option value=2>双人间</option><option value=3>多人间</option></select></dl>
+            <dl><dt>床型</dt><dd><select name="bed"><option value=1>单人床</option><option value=2>双人床</option><option value=3>3/4床</option></select></dd></dl>
+            <dl><dt>价格</dt><dd> £ <input type="text" style="width:60px" name="rent"></dd></dl>
+            <dl><dt>面积</dt><dd>
+                <input type="text" style="width:40px" name="acreage1"> m<sup>2</sup> — <input type="text" style="width:40px" name="acreage2"> m<sup>2</sup><i>  非区间值只输入一个</i></dd></dl>
+            <dl><dt>卫厨</dt><dd>
+                <select name="toilet"><option value=1>独立卫浴</option><option value=0>共享卫浴</option></select>
+                <select name="kitchen"><option value=0>共享厨房</option><option value=1>独立厨房</option></select></dd></dl>
+            <dl><dt></dt><dd><button class="btn" type="submit">确定</button></dd></dl>
+        </div>
+</form>
+        <ul class="adrtab"><li class="on">单人房</li><li>多人房</li><li>套房</li></ul>
+        <ul class="roomslist cf">
+        {?rooms}
+        {#rooms}
+          <li><h4>{name}<strong>$ {rent}</strong></h4>
+          <div><b>单人床</b><b>独立卫浴</b><b>独立厨房</b><b>18 - 20 sqm</b></div></li>
+        {/rooms}
+        {/rooms}
+        </ul>
+     </div>
+{/body}
+

@@ -1,0 +1,19 @@
+.bytit{padding:40px 0;text-align:center;;font-size:30px;font-weight:bold;}
+.loginlay{width:1000px;margin:0 auto;border:1px solid #e3e3e3;background-color:#fff;margin-bottom:40px;border-radius:4px}
+.lgbtm{padding:40px;border-top:1px solid #eee;text-align:right;font-size:15px;font-weight:bold;}
+.loginL{width:500px;min-height:350px;border-right:1px solid #eee;float:left;}
+.loginL h3{padding:40px 40px 0}
+.loginL ul{padding:20px 40px 5px}
+.loginbly{padding:0 40px 40px}
+.loginL ul li{padding-bottom:15px}
+.lgoinbtn{margin:auto;padding:12px 35px;background-color:#19a69a;color:#fff;border-radius:3px;font-size:14px;cursor:pointer;border:none;font-weight:bold;}
+.lgoinbtn:hover,.loginR li a:hover{opacity:0.9}
+.loginR{float:left;padding:80px 40px 40px}
+.loginR li{padding-bottom:20px}
+.loginR li a{display:inline-block;width:220px;height:40px;line-height:40px;text-align:center;border-radius:3px}
+.loginR li a.wxlogin{background-color:#54B359;color:#fff;border:1px solid #3AAD40}
+.loginR li a.nosetup{border:1px solid #19a69a;color:#19a69a;}
+.smsfy{width:200px;border-top-right-radius:0;border-bottom-right-radius:0;float:left;}
+.smsend{width:98px;height:46px;line-height:46px;background-color:#ddd;border:1px solid #ccc;box-sizing: border-box;display:inline-block;cursor:pointer;border-top-right-radius:2px;border-bottom-right-radius:2px;border-left:none;text-align:center;}
+.fyimg{width:100px;height:46px;cursor:pointer;border-top-right-radius:2px;border-bottom-right-radius:2px;float:left;}
+.smsend:hover{background-color:#e1e1e1}

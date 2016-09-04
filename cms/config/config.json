@@ -1,0 +1,56 @@
+{
+    "express": {
+        "view cache": false,
+        "view engine": "dust",
+        "views": "path:./public/templates"
+    },
+    
+    "view engines": {
+        "dust": {
+            "module": "adaro",
+            "renderer": {
+                "method": "dust",
+                "arguments": [
+                    {
+                        "cache": false,
+                        "helpers": [
+                            "dustjs-helpers"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+
+    "middleware": {
+
+        "static": {
+            "module": {
+                "arguments": [ "path:./.build" ]
+            }
+        },
+
+        "router": {
+            "module": {
+                "arguments": [{ "index": "path:./router" }]
+            }
+        },
+
+        "appsec": {
+            "enabled": true,
+            "priority": 60,
+            "module": {
+                "name": "lusca",
+                "arguments": [
+                    {
+                        "csrf": false,
+                        "xframe": "SAMEORIGIN",
+                        "p3p": false,
+                        "csp": false
+                    }
+                ]
+            }
+        }
+
+    }
+}

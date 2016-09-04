@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>{+title/}</title>
+<link rel="stylesheet" type="text/css" href="css/css.css">
+{+link /}
+<script src="js/jquery.js"></script>
+{+script /}
+</head>
+<body>
+<div class="tophead cf"><div class="fqlogo">FunCMS</div>
+<ul class="ustat">
+    <li><a href="">张小树</a></li>
+    <li><a href="">推出</a></li>
+    <li><a href="">前台首页</a></li>
+  </ul>
+<ul class="hnavs">
+    <li><a href="">订单管理</a></li>
+    <li><a href="">公寓管理</a></li>
+    <li><a href="">城市管理</a></li>
+    <li><a href="">代理商管理</a></li>
+    <li><a href="">统计</a></li>
+  </ul>
+</div>
+
+<div class="leftlay">
+  <ul class="leftmenu">
+    <li><a href="/apartment/list">所有公寓</a></li>
+
+  </ul>
+  <div class="addaptbtn"><a href="/apartment/add" class="btn">添加公寓</a></div>
+</div>
+<div class="bodylay">
+      {+body/}
+</div>
+{+footer /}
+</body>
+</html>
