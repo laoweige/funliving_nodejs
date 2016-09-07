@@ -1,0 +1,32 @@
+{>"layouts/master" /}
+{<title }申请表 列表{/title}
+
+{<link }
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+{/link}
+
+{<script}
+<script src="/js/jquery.js"></script>
+{/script}
+
+{<body}
+ <div class="addaptlay">
+<br/>
+<br/>
+<table >
+<tr><th height="30px">名字</th><th>电话</th><th>生日</th><th>邮箱</th><th>大学</th><th>专业</th><th>创建时间</th></tr>
+{#list}
+<tr  height="20px">
+    <td width="100">{name},{@eq key=gender value=1}男{:else}女{/eq}</td>
+    <td width="100">{mobile}</td>
+    <td width="100">{birthday}</td>
+    <td width="100">{email}</td>
+    <td width="200">{university}</td>
+    <td width="100">{major}</td>
+    <td width="100">{createTime}</td>
+
+ </tr>
+{/list}
+</table>
+</div>
+{/body}

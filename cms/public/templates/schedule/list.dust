@@ -1,0 +1,31 @@
+{>"layouts/master" /}
+{<title }预定 列表{/title}
+
+{<link }
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+{/link}
+
+{<script}
+<script src="/js/jquery.js"></script>
+{/script}
+
+{<body}
+ <div class="addaptlay">
+<br/>
+<br/>
+<table >
+<th height="30px">名字</th><th>电话</th><th>邮箱</th><th>开始时间</th><th>退房时间</th><th>创建时间</th>
+{#list}
+<tr  height="20px">
+    <td width="100">{name}</td>
+    <td width="100">{mobile}</td>
+    <td width="100">{email}</td>
+    <td width="100">{startTime}</td>
+    <td width="100">{endTime}</td>
+     <td width="100">{createTime}</td>
+ </tr>
+{/list}
+</table>
+</div>
+{/body}
+
