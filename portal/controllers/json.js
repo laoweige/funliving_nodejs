@@ -31,7 +31,7 @@ exports.associate = function(req, res){
             }
             for(var i=0;i<result.colleges.length;i++){
                 if(j==15) break;
-                result.colleges[i].url="/apartments?city=1&college="+result.colleges[i].id;
+                result.colleges[i].url="/apartments?city="+result.colleges[i].parent+"&college="+result.colleges[i].id;
                 hots.push(result.colleges[i]);
                 j++;
             }
