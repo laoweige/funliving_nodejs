@@ -22,7 +22,8 @@
         <strong class="bkbltit">个人信息</strong>
         <div class="bkblcon">
           <dl class="cf"><dt>姓名</dt><dd><input id="name" class="apint" type="text" placeholder="填写姓名" value="{name}"></dd></dl>
-        <dl class="cf"><dt>性别</dt><dd><input type="radio" name="gender" value="1" ><label for="gender">男</label>  <input type="radio" name="gender" value="2"><label for="gender">女</label></dd></dl>
+        <dl class="cf"><dt>性别</dt><dd><input type="radio" name="gender" value="1" ><label for="gender">男</label>
+        <input type="radio" name="gender" value="2"><label for="gender">女</label></dd></dl>
         <dl class="cf"><dt>出生日期</dt><dd><input id="birthday" class="apint" type="date" placeholder="年/月/日"></dd></dl>
         <dl class="cf"><dt>联系电话</dt><dd><input id="mobile" class="apint" type="tell" placeholder="填写电话" value="{mobile}"></dd></dl>
         <dl class="cf"><dt>常用邮箱</dt><dd><input id="email" class="apint" type="mail" placeholder="填写邮箱" value="{email}"></dd></dl>
@@ -77,7 +78,7 @@
 
 $(".booksbm").click(function(){
   txt=$("input").val();
-  $.post("/",{"name":$("#name").val(),
+  $.post("/apply",{"name":$("#name").val(),
                              "gender":$("input:radio[name='gender']").val(),
                              "birthday":$("#birthday").val(),
                              "mobile":$("#mobile").val(),

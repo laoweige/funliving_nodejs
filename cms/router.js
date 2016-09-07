@@ -1,5 +1,6 @@
 var controllers = require('./controllers');
 var apartmentController = require('./controllers/apartment');
+var scheduleController = require('./controllers/schedule');
 
 module.exports = function (router) {
     router.get('/', controllers.index);
@@ -12,4 +13,9 @@ module.exports = function (router) {
     router.post('/apartment/upload', apartmentController.upload);
 
     router.get('/apartment/list', apartmentController.list);
+
+    router.get('/schedule/list', scheduleController.schedules);
+    router.get('/schedule/applies', scheduleController.applies);
+
+
 };

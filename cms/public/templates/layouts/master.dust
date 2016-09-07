@@ -26,7 +26,9 @@
 
 <div class="leftlay">
   <ul class="leftmenu">
-    <li><a href="/apartment/list">所有公寓</a></li>
+    <li><a href="/apartment/list">公寓管理</a></li>
+    <li><a href="/schedule/list">预定管理</a></li>
+    <li><a href="/schedule/applies">申请管理</a></li>
 
   </ul>
   <div class="addaptbtn"><a href="/apartment/add" class="btn">添加公寓</a></div>

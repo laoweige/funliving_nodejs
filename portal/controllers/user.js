@@ -26,8 +26,8 @@ exports.postLogin =  function (req, res){
                 var result = JSON.parse(body);
                 if (result.id > 0) {
                     var cookies = new Cookies(req,res);
-                    var cryptoMobile = Crypto.encrypt(result.mobile);
-                    cookies.set("mobile",cryptoMobile,1);
+                    cookies.set("mobile",Crypto.encrypt(result.mobile),1);
+                    cookies.set("id",Crypto.encrypt(result.id+""),1);
                     // res.cookie("mobile", result.mobile);
                     res.redirect("/");
                     return;
